@@ -1,3 +1,2 @@
-# 2.1 Exercise Instructions
-- intro to Node, terminal, and APIs
-- dev environment setup
+# 2.2 Exercise Instructions
+- use modules to complete tasks for building an API
