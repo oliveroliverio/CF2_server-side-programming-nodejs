@@ -1,0 +1,5 @@
+2025-06-04T00:23:27.762Z - GET request to /
+2025-06-04T00:23:53.785Z - GET request to /
+2025-06-04T00:23:54.148Z - GET request to /favicon.ico
+2025-06-04T00:23:56.613Z - GET request to /documentation
+2025-06-04T00:23:56.698Z - GET request to /favicon.ico

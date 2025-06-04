@@ -68,4 +68,5 @@ Git commit point: "Add error handling and basic logging"
 
 ### Task 1: Create a Basic Web Server
 - `npm init -y`
-
+- `node server.js`
+- `node test.js`:  should see response body of html
