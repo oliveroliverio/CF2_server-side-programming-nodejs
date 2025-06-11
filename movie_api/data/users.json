@@ -1,0 +1,40 @@
+{
+    "users": [
+      {
+        "username": "moviebuff123",
+        "password": "pass1234",
+        "email": "moviebuff123@example.com",
+        "birthDate": "1990-06-15",
+        "favoriteMovies": ["Parasite", "The Dark Knight", "Knives Out"]
+      },
+      {
+        "username": "cinemalover",
+        "password": "securePass!",
+        "email": "cinemalover@example.com",
+        "birthDate": "1985-02-28",
+        "favoriteMovies": ["Amélie", "La La Land"]
+      },
+      {
+        "username": "scififan88",
+        "password": "space4ever",
+        "email": "scififan88@example.com",
+        "birthDate": "1988-11-02",
+        "favoriteMovies": ["Edge of Tomorrow", "The Dark Knight"]
+      },
+      {
+        "username": "indielover",
+        "password": "moonlightsonata",
+        "email": "indielover@example.com",
+        "birthDate": "1993-09-20",
+        "favoriteMovies": ["Moonlight", "Spirited Away", "Amélie"]
+      },
+      {
+        "username": "horrorjunkie",
+        "password": "creepynights",
+        "email": "horrorjunkie@example.com",
+        "birthDate": "1991-10-31",
+        "favoriteMovies": ["Get Out", "Parasite"]
+      }
+    ]
+  }
+  

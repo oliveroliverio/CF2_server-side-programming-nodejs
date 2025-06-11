@@ -1,18 +1,9 @@
 const express = require('express');
 const app = express();
+// import movies data
+const movies = require('./data/movies.json');
 
-let topMovies = [
-    {
-        id: 1,
-        title: "Inception",
-        director: "Christopher Nolan"
-    },
-    {
-        id: 2,
-        title: "The Shawshank Redemption",
-        director: "Frank Darabont"
-    }
-];
+
 
 // GET requests
 app.get('/', (req, res) => {
@@ -24,7 +15,7 @@ app.get('/documentation', (req, res) => {
 });
 
 app.get('/movies', (req, res) => {
-    res.json(topMovies);
+    res.json(movies);
 });
 
 app.use(express.static('public'));
