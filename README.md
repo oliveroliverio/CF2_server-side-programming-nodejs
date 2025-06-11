@@ -69,3 +69,8 @@ Git commit point: "Add error handling and basic logging"
 ### Task 1: Create a Basic Web Server
 - `npm init -y`
 
+
+
+# Things to remember
+- `npm init -y`:  initialize a new Node.js project with `package.json` without any prompts (-y)
+- git commit --allow-empty -m "----------begin task-------"
