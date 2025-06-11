@@ -6,23 +6,29 @@
   "scripts": {
     "test": "jest --detectOpenHandles --forceExit",
     "start": "node movie_api/server.js",
-    "dev": "nodemon movie_api/server.js"
+    "dev": "nodemon movie_api/server-students.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^2.2.0",
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "uuid": "^11.1.0"
   },
   "devDependencies": {
     "jest": "^30.0.0",
-    "supertest": "^7.1.1",
-    "nodemon": "^3.0.2"
+    "nodemon": "^3.0.2",
+    "supertest": "^7.1.1"
   },
   "jest": {
     "testEnvironment": "node",
-    "testMatch": ["**/tests/**/*.js"],
-    "moduleDirectories": ["node_modules", "movie_api"]
+    "testMatch": [
+      "**/tests/**/*.js"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "movie_api"
+    ]
   }
 }
