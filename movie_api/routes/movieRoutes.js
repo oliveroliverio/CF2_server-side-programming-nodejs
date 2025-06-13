@@ -5,19 +5,19 @@ const moviesData = require('../data/movies.json');
 const movies = moviesData.movies;
 
 // Get all movies
-router.get('/movies', (req, res) => {
+router.get('/', (req, res) => {
     res.json(movies);
 });
 
 // Get movie by ID - using a specific path to avoid conflict with title search
-router.get('/movies/id/:id', (req, res) => {
+router.get('/id/:id', (req, res) => {
     const movie = movies.find(movie => movie.id === req.params.id);
     if (!movie) return res.status(404).send('The movie with the given ID was not found.');
     res.json(movie);
 });
 
 // Get movie by title
-router.get('/movies/title/:title', (req, res) => {
+router.get('/title/:title', (req, res) => {
     // Decode the URL parameter to handle spaces properly
     const searchTitle = decodeURIComponent(req.params.title);
     console.log(`Searching for movie title: "${searchTitle}"`); // Debug log
@@ -36,7 +36,7 @@ router.get('/movies/title/:title', (req, res) => {
 });
 
 // Get movie director
-router.get('/movies/director/:director', (req, res) => {
+router.get('/director/:director', (req, res) => {
     const director = req.params.director;
     const moviesByDirector = movies.filter(movie => movie.director.name === director);
     if (moviesByDirector.length === 0) return res.status(404).send('No movies found for the given director.');

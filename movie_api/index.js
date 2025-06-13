@@ -1,10 +1,9 @@
 const express = require('express');
 const app = express();
-// import movies data
-const moviesData = require('./data/movies.json');
-const movies = moviesData.movies;
 
-
+// Import route modules
+const movieRoutes = require('./routes/movieRoutes');
+const userRoutes = require('./routes/userRoutes');
 
 // GET requests
 app.get('/', (req, res) => {
@@ -15,6 +14,9 @@ app.get('/documentation', (req, res) => {
     res.sendFile('public/documentation.html', { root: __dirname });
 });
 
+// Use route modules
+app.use('/movies', movieRoutes);
+app.use('/users', userRoutes);
 
 app.use(express.static('public'));
 
