@@ -28,7 +28,13 @@ app.get('/movies/id/:id', (req, res) => {
 
 // Get movie by title
 app.get('/movies/title/:title', (req, res) => {
-    const movie = movies.find(movie => movie.title === req.params.title);
+    // Decode the URL parameter to handle spaces properly
+    const searchTitle = decodeURIComponent(req.params.title);
+    
+    // Case-insensitive search for better user experience
+    const movie = movies.find(movie => 
+        movie.title.toLowerCase() === searchTitle.toLowerCase());
+        
     if (!movie) return res.status(404).send('The movie with the given title was not found.');
     res.json(movie);
 })
