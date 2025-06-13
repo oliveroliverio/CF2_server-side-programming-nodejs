@@ -63,3 +63,29 @@ Restructuring the API with a modular approach provides several benefits:
 
 #### Why:
 A comprehensive test suite ensures that all API endpoints function correctly and handle edge cases properly. The organized structure makes it easy to identify which part of the API has issues if tests fail, and the coverage of error cases helps ensure robust error handling throughout the application.
+
+## 2025-06-12: Add CRUD operations with file persistence
+
+### Commit: feat: Add CRUD operations with file persistence
+
+#### Files Changed:
+- `movie_api/routes/movieRoutes.js`: Added POST, PUT, DELETE endpoints for movies
+- `movie_api/routes/userRoutes.js`: Added POST, PUT, DELETE endpoints for users
+
+#### Changes:
+1. Added complete CRUD operations for movies:
+   - POST `/movies` - Create a new movie
+   - PUT `/movies/id/:id` - Update an existing movie
+   - DELETE `/movies/id/:id` - Delete a movie
+2. Added complete CRUD operations for users:
+   - POST `/users` - Create a new user
+   - PUT `/users/:username` - Update an existing user
+   - DELETE `/users/:username` - Delete a user
+3. Added favorite movie management:
+   - POST `/users/:username/favorites/:movieId` - Add a movie to favorites
+   - DELETE `/users/:username/favorites/:movieTitle` - Remove a movie from favorites
+4. Implemented file persistence by writing changes back to JSON files
+5. Added validation and error handling for all operations
+
+#### Why:
+Adding CRUD operations completes the API functionality, allowing not just retrieval but also creation, modification, and deletion of resources. The implementation uses file-based persistence to maintain data between server restarts by reading from and writing to the static JSON files. This approach provides a simple yet effective way to handle data persistence without requiring a database setup.
