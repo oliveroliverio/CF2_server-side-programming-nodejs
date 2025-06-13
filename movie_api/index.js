@@ -1,7 +1,8 @@
 const express = require('express');
 const app = express();
 // import movies data
-const movies = require('./data/movies.json');
+const moviesData = require('./data/movies.json');
+const movies = moviesData.movies;
 
 
 
@@ -16,6 +17,12 @@ app.get('/documentation', (req, res) => {
 
 app.get('/movies', (req, res) => {
     res.json(movies);
+});
+
+app.get('/movies/:id', (req, res) => {
+    const movie = movies.find(movie => movie.id === req.params.id);
+    if (!movie) return res.status(404).send('The movie with the given ID was not found.');
+    res.json(movie);
 });
 
 app.use(express.static('public'));

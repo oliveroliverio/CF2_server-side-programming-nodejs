@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest --detectOpenHandles --forceExit",
     "start": "node movie_api/server.js",
-    "dev": "nodemon movie_api/server-students.js"
+    "dev": "nodemon movie_api/server.js"
   },
   "keywords": [],
   "author": "",
