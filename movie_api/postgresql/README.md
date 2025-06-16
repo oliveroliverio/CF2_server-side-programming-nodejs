@@ -26,6 +26,11 @@ This is the PostgreSQL implementation of the Movie API, refactored from the Mong
 
 1. Install dependencies:
 ```bash
+brew install postgresql
+# install pgadmin4 for a GUI to manage the database
+brew install --cask pgadmin4
+brew services start postgresql
+createdb movieAPI
 npm install
 ```
 
@@ -47,6 +52,10 @@ PORT=3000
 4. Seed the database with initial data:
 ```bash
 node movie_api/postgresql/utils/seedDatabase.js
+```
+or
+```bash
+npm run seed:postgresql
 ```
 
 5. Start the server:
