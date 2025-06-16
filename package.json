@@ -13,7 +13,9 @@
     "dev:postgresql": "nodemon movie_api/postgresql/server.js",
     "seed:mongodb": "node movie_api/mongodb/utils/seedDatabase.js",
     "seed:postgresql": "node movie_api/postgresql/utils/seedDatabase.js",
-    "update:directors": "node movie_api/postgresql/utils/updateDirectors.js"
+    "update:directors": "node movie_api/postgresql/utils/updateDirectors.js",
+    "docs:generate": "node movie_api/shared/utils/generateDocs.js",
+    "docs:watch": "node movie_api/shared/utils/watchAndGenerateDocs.js"
   },
   "keywords": [
     "movies",
@@ -27,6 +29,7 @@
   "dependencies": {
     "bcrypt": "^5.1.1",
     "body-parser": "^2.2.0",
+    "chokidar": "^3.5.3",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "mongoose": "^7.5.0",

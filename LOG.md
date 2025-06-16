@@ -178,3 +178,35 @@ Adding a PostgreSQL implementation provides flexibility in database choice and d
 
 #### Why:
 The case-sensitive database name was causing connection issues with PostgreSQL. The seed script needed to be updated to handle the nested JSON structure of the data files. These changes ensure that the PostgreSQL implementation can be properly set up and seeded with initial data, enabling full functionality of the API with PostgreSQL as the backend.
+
+## 2025-06-16: Add Automated API Documentation Generation
+
+### Commit: feat: Implement automated HTML documentation generation system
+
+#### Files Changed:
+- `movie_api/shared/utils/generateDocs.js`: Created main documentation generator that scans controllers and routes
+- `movie_api/shared/utils/watchAndGenerateDocs.js`: Added file watcher to automatically regenerate docs when code changes
+- `movie_api/shared/utils/setupDocTemplates.js`: Created template setup script for documentation
+- `package.json`: Added new npm scripts for documentation generation
+
+#### Changes:
+1. Implemented an automated documentation system that extracts API endpoints, methods, parameters, and descriptions from the codebase
+2. Created a file watcher that automatically regenerates documentation when controllers, routes, or models are modified
+3. Added a template system for consistent documentation styling and formatting
+4. Integrated with both MongoDB and PostgreSQL implementations to document all API endpoints
+5. Improved developer experience by eliminating the need to manually update documentation
+
+#### NPM Commands:
+```
+# Generate documentation once
+npm run generate-docs
+
+# Start the documentation watcher (auto-regenerates when files change)
+npm run watch-docs
+
+# Setup documentation templates (run once before first use)
+npm run setup-docs
+```
+
+#### Why:
+The automated documentation system streamlines the process of maintaining accurate and up-to-date API documentation, reducing the overhead of manual documentation updates and ensuring that the documentation remains consistent with the codebase.
