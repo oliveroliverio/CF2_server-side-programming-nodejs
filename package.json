@@ -4,10 +4,15 @@
   "description": "A REST API for movies with MongoDB",
   "main": "movie_api/server.js",
   "scripts": {
-    "test": "jest --detectOpenHandles --forceExit",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node movie_api/server.js",
     "dev": "nodemon movie_api/server.js",
-    "seed": "node movie_api/utils/seedDatabase.js"
+    "start:mongodb": "node movie_api/mongodb/server.js",
+    "dev:mongodb": "nodemon movie_api/mongodb/server.js",
+    "start:postgresql": "node movie_api/postgresql/server.js",
+    "dev:postgresql": "nodemon movie_api/postgresql/server.js",
+    "seed:mongodb": "node movie_api/mongodb/utils/seedDatabase.js",
+    "seed:postgresql": "node movie_api/postgresql/utils/seedDatabase.js"
   },
   "keywords": [
     "movies",
@@ -25,6 +30,10 @@
     "express": "^4.18.2",
     "mongoose": "^7.5.0",
     "morgan": "^1.10.0",
+    "pg": "^8.11.3",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.35.2",
+    "sequelize-cli": "^6.6.2",
     "uuid": "^11.1.0"
   },
   "devDependencies": {

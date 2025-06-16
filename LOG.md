@@ -127,3 +127,36 @@ Refactoring to MVC architecture with MongoDB provides numerous benefits:
 - **Security**: Proper password hashing for user authentication
 - **Maintainability**: Clear separation of concerns makes code easier to maintain
 - **Extensibility**: Easier to add new features or modify existing ones
+
+## 2025-06-16: Add PostgreSQL implementation and reorganize project structure
+
+### Commit: feat: Add PostgreSQL implementation and reorganize project structure
+
+#### Files Changed:
+- `movie_api/postgresql/models/Movie.js`: Created Sequelize models for movies, genres, and directors
+- `movie_api/postgresql/models/User.js`: Created Sequelize model for users with password hashing
+- `movie_api/postgresql/controllers/movieController.js`: Implemented controllers for movie operations using PostgreSQL
+- `movie_api/postgresql/controllers/userController.js`: Implemented controllers for user operations using PostgreSQL
+- `movie_api/postgresql/routes/movieRoutes.js`: Created routes for PostgreSQL implementation
+- `movie_api/postgresql/routes/userRoutes.js`: Created routes for PostgreSQL implementation
+- `movie_api/postgresql/config/database.js`: Added PostgreSQL connection configuration
+- `movie_api/postgresql/utils/seedDatabase.js`: Created script to seed PostgreSQL with initial data
+- `movie_api/postgresql/server.js`: Created server file for PostgreSQL implementation
+- `movie_api/postgresql/index.js`: Created main app file for PostgreSQL implementation
+- `movie_api/postgresql/README.md`: Added documentation for PostgreSQL implementation
+- `movie_api/README.md`: Created main README with information about both implementations
+- `package.json`: Added PostgreSQL dependencies and updated scripts
+- `.env`: Added PostgreSQL environment variables
+- `.gitignore`: Updated to include environment variables and other files
+
+#### Changes:
+1. Created a PostgreSQL implementation of the movie API using Sequelize ORM
+2. Reorganized project structure to support both MongoDB and PostgreSQL implementations
+3. Moved MongoDB implementation to `movie_api/mongodb/` directory
+4. Created a shared directory for common files
+5. Updated package.json with scripts for both implementations
+6. Created comprehensive documentation for both implementations
+7. Implemented proper relational database structure with foreign keys and join tables
+
+#### Why:
+Adding a PostgreSQL implementation provides flexibility in database choice and demonstrates the API's adaptability to different database systems. The reorganized project structure makes it easier to maintain both implementations and switch between them. The relational database structure in PostgreSQL offers strong data consistency and integrity through foreign key constraints, while the MongoDB implementation offers flexibility and schema-less design.
