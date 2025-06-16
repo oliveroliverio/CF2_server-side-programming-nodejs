@@ -12,7 +12,8 @@
     "start:postgresql": "node movie_api/postgresql/server.js",
     "dev:postgresql": "nodemon movie_api/postgresql/server.js",
     "seed:mongodb": "node movie_api/mongodb/utils/seedDatabase.js",
-    "seed:postgresql": "node movie_api/postgresql/utils/seedDatabase.js"
+    "seed:postgresql": "node movie_api/postgresql/utils/seedDatabase.js",
+    "update:directors": "node movie_api/postgresql/utils/updateDirectors.js"
   },
   "keywords": [
     "movies",
