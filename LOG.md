@@ -160,3 +160,21 @@ Refactoring to MVC architecture with MongoDB provides numerous benefits:
 
 #### Why:
 Adding a PostgreSQL implementation provides flexibility in database choice and demonstrates the API's adaptability to different database systems. The reorganized project structure makes it easier to maintain both implementations and switch between them. The relational database structure in PostgreSQL offers strong data consistency and integrity through foreign key constraints, while the MongoDB implementation offers flexibility and schema-less design.
+
+## 2025-06-16: Fix PostgreSQL Database Setup and Seeding
+
+### Commit: fix: PostgreSQL database configuration and seeding script
+
+#### Files Changed:
+- `movie_api/postgresql/config/database.js`: Updated database name to lowercase for PostgreSQL compatibility
+- `movie_api/postgresql/utils/seedDatabase.js`: Fixed data loading from JSON files and added better error handling
+
+#### Changes:
+1. Updated database configuration to use lowercase 'movieapi' instead of 'movieAPI' for better PostgreSQL compatibility
+2. Fixed the seed script to properly handle nested JSON data structure
+3. Added comprehensive error handling and debugging to the seed script
+4. Updated file paths to correctly load data from the shared directory
+5. Added validation to ensure data is properly loaded before attempting to seed the database
+
+#### Why:
+The case-sensitive database name was causing connection issues with PostgreSQL. The seed script needed to be updated to handle the nested JSON structure of the data files. These changes ensure that the PostgreSQL implementation can be properly set up and seeded with initial data, enabling full functionality of the API with PostgreSQL as the backend.

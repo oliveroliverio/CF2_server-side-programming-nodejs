@@ -1,5 +1,9 @@
 const fs = require('fs');
 const path = require('path');
+
+// Set environment variable for database name to ensure lowercase
+process.env.DB_NAME = 'movieapi';
+
 const { sequelize } = require('../config/database');
 const { Movie, Genre, Director } = require('../models/Movie');
 const { User } = require('../models/User');
@@ -7,9 +11,18 @@ const { User } = require('../models/User');
 // Read JSON data files
 const readJsonFile = (filename) => {
   try {
-    const filePath = path.join(__dirname, '../../mongodb/data', filename);
+    const filePath = path.join(__dirname, '../../shared/data', filename);
+    console.log(`Attempting to read file: ${filePath}`);
+    
+    if (!fs.existsSync(filePath)) {
+      console.error(`File does not exist: ${filePath}`);
+      return [];
+    }
+    
     const data = fs.readFileSync(filePath, 'utf8');
-    return JSON.parse(data);
+    const parsedData = JSON.parse(data);
+    console.log(`Successfully read ${filename}, found ${Array.isArray(parsedData) ? parsedData.length : 'non-array'} items`);
+    return parsedData;
   } catch (error) {
     console.error(`Error reading ${filename}:`, error);
     return [];
@@ -26,8 +39,28 @@ async function seedDatabase() {
     console.log('Database synchronized - existing tables dropped');
     
     // Read data from JSON files
-    const moviesData = readJsonFile('movies.json');
-    const usersData = readJsonFile('users.json');
+    let rawMoviesData = readJsonFile('movies.json');
+    let rawUsersData = readJsonFile('users.json');
+    
+    // Extract arrays from nested structure if needed
+    const moviesData = rawMoviesData.movies || rawMoviesData;
+    const usersData = rawUsersData.users || rawUsersData;
+    
+    // Verify data was loaded correctly
+    if (!moviesData || !Array.isArray(moviesData) || moviesData.length === 0) {
+      console.error('No movies data found or data is not an array');
+      console.log('Movies data structure:', typeof rawMoviesData);
+      return;
+    }
+    
+    if (!usersData || !Array.isArray(usersData) || usersData.length === 0) {
+      console.error('No users data found or data is not an array');
+      console.log('Users data structure:', typeof rawUsersData);
+      // Continue with movies only if users data is missing
+    }
+    
+    console.log(`Loaded ${moviesData.length} movies and ${usersData ? usersData.length : 0} users`);
+    console.log('First movie:', JSON.stringify(moviesData[0], null, 2));
     
     // Create genres and directors first
     const genreMap = new Map();

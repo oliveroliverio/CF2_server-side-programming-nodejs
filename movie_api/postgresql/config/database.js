@@ -3,7 +3,7 @@ require('dotenv').config();
 
 // Database connection configuration
 const sequelize = new Sequelize(
-  process.env.DB_NAME || 'movieAPI', 
+  process.env.DB_NAME || 'movieapi', 
   process.env.DB_USER || 'postgres', 
   process.env.DB_PASSWORD || 'postgres', 
   {
