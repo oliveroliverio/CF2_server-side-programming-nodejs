@@ -89,3 +89,41 @@ A comprehensive test suite ensures that all API endpoints function correctly and
 
 #### Why:
 Adding CRUD operations completes the API functionality, allowing not just retrieval but also creation, modification, and deletion of resources. The implementation uses file-based persistence to maintain data between server restarts by reading from and writing to the static JSON files. This approach provides a simple yet effective way to handle data persistence without requiring a database setup.
+
+## 2025-06-16: Refactor API to MVC architecture with MongoDB/Mongoose
+
+### Commit: refactor: Implement MVC architecture with MongoDB and Mongoose integration
+
+#### Files Changed:
+- `movie_api/models/Movie.js`: Created Mongoose schema for movies
+- `movie_api/models/User.js`: Created Mongoose schema for users with password hashing
+- `movie_api/controllers/movieController.js`: Created controller for movie operations
+- `movie_api/controllers/userController.js`: Created controller for user operations
+- `movie_api/routes/movieRoutes.js`: Updated to use movie controller
+- `movie_api/routes/userRoutes.js`: Updated to use user controller
+- `movie_api/index.js`: Updated to connect to MongoDB
+- `movie_api/package.json`: Added MongoDB/Mongoose dependencies
+- `movie_api/.gitignore`: Created to exclude node_modules and .env
+- `movie_api/utils/seedDatabase.js`: Created utility to migrate JSON data to MongoDB
+
+#### Changes:
+1. Implemented proper MVC (Model-View-Controller) architecture:
+   - Models: Mongoose schemas for Movie and User
+   - Controllers: Separate logic for movie and user operations
+   - Routes: Clean routing using controllers
+2. Added MongoDB integration with Mongoose:
+   - Connection setup in index.js
+   - Proper schema definitions with validation
+   - Password hashing for user security
+3. Created data migration utility to seed MongoDB from existing JSON files
+4. Updated all CRUD operations to use MongoDB instead of file-based storage
+5. Added proper error handling for database operations
+
+#### Why:
+Refactoring to MVC architecture with MongoDB provides numerous benefits:
+- **Scalability**: MongoDB can handle much larger datasets than file-based storage
+- **Performance**: Faster queries and operations on large datasets
+- **Data Integrity**: Schema validation ensures data consistency
+- **Security**: Proper password hashing for user authentication
+- **Maintainability**: Clear separation of concerns makes code easier to maintain
+- **Extensibility**: Easier to add new features or modify existing ones
