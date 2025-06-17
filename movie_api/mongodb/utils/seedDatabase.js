@@ -12,28 +12,28 @@ mongoose.connect(process.env.CONNECTION_URI || 'mongodb://localhost:27017/movieA
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
-.then(() => {
-  console.log('Connected to MongoDB for seeding');
-  seedDatabase();
-})
-.catch(err => {
-  console.error('Failed to connect to MongoDB:', err);
-  process.exit(1);
-});
+  .then(() => {
+    console.log('Connected to MongoDB for seeding');
+    seedDatabase();
+  })
+  .catch(err => {
+    console.error('Failed to connect to MongoDB:', err);
+    process.exit(1);
+  });
 
 async function seedDatabase() {
   try {
     // Read JSON files
-    const moviesPath = path.join(__dirname, '../data/movies.json');
-    const usersPath = path.join(__dirname, '../data/users.json');
-    
+    const moviesPath = path.join(__dirname, '../../shared/data/movies.json');
+    const usersPath = path.join(__dirname, '../../shared/data/users.json');
+
     const moviesData = JSON.parse(fs.readFileSync(moviesPath, 'utf8')).movies;
     const usersData = JSON.parse(fs.readFileSync(usersPath, 'utf8')).users;
 
     // Clear existing data
     await Movie.deleteMany({});
     await User.deleteMany({});
-    
+
     console.log('Cleared existing data');
 
     // Insert movies
@@ -42,7 +42,7 @@ async function seedDatabase() {
       const { id, ...movieWithoutId } = movie;
       return movieWithoutId;
     }));
-    
+
     console.log(`Inserted ${insertedMovies.length} movies`);
 
     // Create a map of movie titles to MongoDB ObjectIds
@@ -57,7 +57,7 @@ async function seedDatabase() {
       const favoriteMovieIds = user.favoriteMovies
         .map(title => movieTitleToId[title])
         .filter(id => id); // Filter out any undefined IDs
-      
+
       return {
         ...user,
         favoriteMovies: favoriteMovieIds

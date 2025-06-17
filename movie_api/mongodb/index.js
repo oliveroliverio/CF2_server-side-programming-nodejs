@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 const path = require('path');
 const app = express();
 
+
 // Import route modules
 const movieRoutes = require('./routes/movieRoutes');
 const userRoutes = require('./routes/userRoutes');
@@ -16,12 +17,12 @@ mongoose.connect(process.env.CONNECTION_URI || 'mongodb://localhost:27017/movieA
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
-.then(() => {
-  console.log('Connected to MongoDB');
-})
-.catch(err => {
-  console.error('Failed to connect to MongoDB:', err);
-});
+  .then(() => {
+    console.log('Connected to MongoDB');
+  })
+  .catch(err => {
+    console.error('Failed to connect to MongoDB:', err);
+  });
 
 // Middleware
 app.use(morgan('common'));
@@ -34,7 +35,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/documentation', (req, res) => {
-  res.sendFile('public/documentation.html', { root: __dirname });
+  res.sendFile(path.join(__dirname, '../shared/public/documentation.html'));
 });
 
 // Use route modules
