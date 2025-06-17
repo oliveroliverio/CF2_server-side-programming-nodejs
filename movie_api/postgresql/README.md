@@ -22,7 +22,7 @@ This is the PostgreSQL implementation of the Movie API, refactored from the Mong
 - Node.js and npm installed
 - PostgreSQL installed and running
 
-### Installation
+### Postgres RDMS Installation
 
 1. Install dependencies:
 ```bash
@@ -41,7 +41,7 @@ createdb movieapi
 
 3. Configure environment variables in `.env` file:
 ```
-DB_NAME=movieAPI
+DB_NAME=movieapi
 DB_USER=postgres
 DB_PASSWORD=postgres
 DB_HOST=localhost
@@ -62,6 +62,10 @@ npm run seed:postgresql
 ```bash
 node movie_api/postgresql/server.js
 ```
+
+6. Open PGAdmin4 and connect to the database
+- General | name: movieapi_server
+- Connection | name: localhost | port: 5432 | username: postgres | password: postgres
 
 ## API Endpoints
 
@@ -99,3 +103,88 @@ node movie_api/postgresql/server.js
 - pg: PostgreSQL client for Node.js
 - bcrypt: Password hashing
 - dotenv: Environment variable management
+
+---
+
+# Essential Postgres Commands
+# Start PostgreSQL service
+brew services start postgresql
+
+# Stop PostgreSQL service
+brew services stop postgresql
+
+# Restart PostgreSQL service
+brew services restart postgresql
+
+# Check service status
+brew services list | grep postgresql
+
+# start psql cli session
+psql
+
+# List all databases
+\l
+# or
+psql -l
+
+# Connect to a specific database
+psql -d database_name
+
+# Create a new database
+createdb database_name
+# or
+psql -c "CREATE DATABASE database_name;"
+
+# Delete a database
+dropdb database_name
+# or
+psql -c "DROP DATABASE database_name;"
+
+# Show current connection info
+\conninfo
+
+# Show server version
+SELECT version();
+
+# Show current user
+SELECT current_user;
+
+# Show current database
+SELECT current_database();
+
+# Connect to different database
+\c database_name
+
+# List all tables
+\dt
+
+# Describe table structure
+\d table_name
+
+# List all schemas
+\dn
+
+# List all users and their roles
+\du
+
+# Show all running queries
+SELECT * FROM pg_stat_activity;
+
+# Exit psql shell
+\q
+
+# Backup database
+pg_dump database_name > backup_file.sql
+
+# Restore database
+psql database_name < backup_file.sql
+
+# Check PostgreSQL port
+sudo lsof -i :5432
+
+# View PostgreSQL log
+tail -f /usr/local/var/log/postgresql.log
+
+# Reset PostgreSQL password
+psql postgres
+\password postgres
