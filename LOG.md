@@ -210,3 +210,31 @@ npm run setup-docs
 
 #### Why:
 The automated documentation system streamlines the process of maintaining accurate and up-to-date API documentation, reducing the overhead of manual documentation updates and ensuring that the documentation remains consistent with the codebase.
+
+## 2025-06-16: Add local image storage system for markdown documentation
+
+### Commit: feat: Add local image storage system for markdown documentation
+
+#### Files Changed:
+- [images/README.md](cci:7://file:///Users/olivero54/Downloads/z-dev/CF2_server-side-programming-nodejs/images/README.md:0:0-0:0): Created README explaining the image directory structure
+- `scripts/download-markdown-images.js`: Implemented script to download external images and update markdown references
+- `scripts/README.md`: Added documentation for using the image downloader script
+- [package.json](cci:7://file:///Users/olivero54/Downloads/z-dev/CF2_server-side-programming-nodejs/package.json:0:0-0:0): Added npm command `download-images` for easy script execution
+
+#### Changes:
+1. Created an organized image directory structure with categorized subdirectories:
+   - `auth/` - Authentication and authorization related images
+   - `ui/` - User interface screenshots and examples
+   - `icons/` - Icons and small graphics
+   - `diagrams/` - Architectural diagrams and flowcharts
+   - `avatars/` - User avatars and profile pictures
+   - `misc/` - Miscellaneous images
+2. Implemented a Node.js script that:
+   - Scans all markdown files for image URLs
+   - Downloads images to appropriate local subdirectories
+   - Updates markdown references to use local paths
+   - Handles redirects and various image formats
+3. Added npm command `download-images` for easy execution
+
+#### Why:
+External image URLs in markdown documentation can break over time, causing documentation to lose important visual elements. This local image storage system ensures that all images persist even if external URLs break, making the documentation more resilient and self-contained. The categorized directory structure also improves organization and makes it easier to manage images.
