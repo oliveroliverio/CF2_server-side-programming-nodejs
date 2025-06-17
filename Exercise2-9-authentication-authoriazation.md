@@ -1,426 +1,3 @@
-![Revisit consent button](https://cdn-cookieyes.com/assets/images/revisit.svg)
-
-We value your privacy
-
-We use cookies to enhance your browsing experience, serve personalised ads or content, and analyse our traffic. By clicking "Accept All", you consent to our use of cookies.
-
-![cky-close-icon](https://cdn-cookieyes.com/assets/images/close.svg)
-
-We use cookies to help you navigate efficiently and perform certain functions. You will find detailed information about all cookies under each consent category below.
-
-The cookies that are categorised as "Necessary" are stored on your browser as they are essential for enabling the basic functionalities of the site. ... Show more
-
-For more information on how Google's third-party cookies operate and handle your data, see: [Google Privacy Policy](https://business.safety.google/privacy)
-
-Necessary cookies are required to enable the basic features of this site, such as providing secure log-in or adjusting your consent preferences. These cookies do not store any personally identifiable data.
-
-
-- Cookie__cf_uuid
-- Duration1 year 1 month 4 days
-- DescriptionDescription is currently not available.
-
-
-- Cookielanding_page
-- Duration1 hour
-- DescriptionThe _landing_page cookie tracks the first page a user visits on a website, helping to analyze user behavior and optimize the site's performance.
-
-
-- Cookie__cf_bm
-- Duration1 hour
-- DescriptionThis cookie, set by Cloudflare, is used to support Cloudflare Bot Management.
-
-
-- Cookie_cfuvid
-- Durationsession
-- DescriptionCalendly sets this cookie to track users across sessions to optimize user experience by maintaining session consistency and providing personalized services
-
-
-- Cookie__hssrc
-- Durationsession
-- DescriptionThis cookie is set by Hubspot whenever it changes the session cookie. The __hssrc cookie set to 1 indicates that the user has restarted the browser, and if the cookie does not exist, it is assumed to be a new session.
-
-
-- Cookie__hssc
-- Duration1 hour
-- DescriptionHubSpot sets this cookie to keep track of sessions and to determine if HubSpot should increment the session number and timestamps in the __hstc cookie.
-
-
-- CookieOptanonConsent
-- Duration1 year
-- DescriptionOneTrust sets this cookie to store details about the site's cookie category and check whether visitors have given or withdrawn consent from the use of each category.
-
-
-- CookiewpEmojiSettingsSupports
-- Durationsession
-- DescriptionWordPress sets this cookie when a user interacts with emojis on a WordPress site.  It helps determine if the user's browser can display emojis properly.
-
-
-- CookieYSC
-- Durationsession
-- DescriptionYoutube sets this cookie to track the views of embedded videos on Youtube pages.
-
-
-- CookieVISITOR_INFO1_LIVE
-- Duration6 months
-- DescriptionYouTube sets this cookie to measure bandwidth, determining whether the user gets the new or old player interface.
-
-
-- CookieVISITOR_PRIVACY_METADATA
-- Duration6 months
-- DescriptionYouTube sets this cookie to store the user's cookie consent state for the current domain.
-
-
-- Cookie__utmz
-- Duration6 months
-- DescriptionGoogle Analytics sets this cookie to store the traffic source or campaign by which the visitor reached the site.
-
-
-- Cookie_coach_session
-- Durationsession
-- DescriptionNo description available.
-
-
-- Cookie__cfruid
-- Durationsession
-- DescriptionCloudflare sets this cookie to identify trusted web traffic.
-
-
-- Cookiem
-- Duration1 year 1 month 4 days
-- DescriptionStripe sets this cookie for fraud prevention purposes. It identifies the device used to access the website, allowing the website to be formatted accordingly.
-
-
-- Cookieyt.innertube::requests
-- DurationNever Expires
-- DescriptionYouTube sets this cookie to register a unique ID to store data on what videos from YouTube the user has seen.
-
-
-- Cookieyt.innertube::nextId
-- DurationNever Expires
-- DescriptionYouTube sets this cookie to register a unique ID to store data on what videos from YouTube the user has seen.
-
-
-- Cookieyt-remote-device-id
-- DurationNever Expires
-- DescriptionYouTube sets this cookie to store the user's video preferences using embedded YouTube videos.
-
-
-- Cookieytidb::LAST_RESULT_ENTRY_KEY
-- DurationNever Expires
-- DescriptionThe cookie ytidb::LAST_RESULT_ENTRY_KEY is used by YouTube to store the last search result entry that was clicked by the user. This information is used to improve the user experience by providing more relevant search results in the future.
-
-
-- Cookieyt-remote-connected-devices
-- DurationNever Expires
-- DescriptionYouTube sets this cookie to store the user's video preferences using embedded YouTube videos.
-
-
-- Cookieyt-remote-session-app
-- Durationsession
-- DescriptionThe yt-remote-session-app cookie is used by YouTube to store user preferences and information about the interface of the embedded YouTube video player.
-
-
-- Cookieyt-remote-cast-installed
-- Durationsession
-- DescriptionThe yt-remote-cast-installed cookie is used to store the user's video player preferences using embedded YouTube video.
-
-
-- Cookieyt-remote-session-name
-- Durationsession
-- DescriptionThe yt-remote-session-name cookie is used by YouTube to store the user's video player preferences using embedded YouTube video.
-
-
-- Cookieyt-remote-fast-check-period
-- Durationsession
-- DescriptionThe yt-remote-fast-check-period cookie is used by YouTube to store the user's video player preferences for embedded YouTube videos.
-
-
-- Cookie_calendly_session
-- Duration21 days
-- DescriptionCalendly, a Meeting Schedulers, sets this cookie to allow the meeting scheduler to function within the website and to add events into the visitor’s calendar.
-
-
-- Cookiecookieyes-consent
-- Duration1 year
-- DescriptionCookieYes sets this cookie to remember users' consent preferences so that their preferences are respected on subsequent visits to this site. It does not collect or store any personal information about the site visitors.
-
-Functional cookies help perform certain functionalities like sharing the content of the website on social media platforms, collecting feedback, and other third-party features.
-
-No cookies to display.
-
-Analytical cookies are used to understand how visitors interact with the website. These cookies help provide information on metrics such as the number of visitors, bounce rate, traffic source, etc.
-
-
-- Cookielanding_page_1
-- Duration1 day
-- DescriptionDescription is currently not available.
-
-
-- Cookielanding_page_30
-- Duration1 month
-- DescriptionDescription is currently not available.
-
-
-- Cookiesource
-- Duration1 day
-- DescriptionDescription is currently not available.
-
-
-- Cookiemedium
-- Duration1 day
-- DescriptionNo description available.
-
-
-- Cookiecontent
-- Duration1 day
-- DescriptionNo description available.
-
-
-- Cookieterm
-- Duration1 day
-- DescriptionDescription is currently not available.
-
-
-- Cookiecampaign
-- Duration1 day
-- DescriptionNo description available.
-
-
-- Cookieconversion_page
-- Duration1 day
-- DescriptionNo description available.
-
-
-- Cookie_omappvp
-- Duration1 year 1 month 4 days
-- DescriptionThe _omappvp cookie is set to distinguish new and returning users and is used in conjunction with _omappvs cookie.
-
-
-- Cookie_omappvs
-- Duration20 minutes
-- DescriptionThe _omappvs cookie, used in conjunction with the _omappvp cookies, is used to determine if the visitor has visited the website before, or if it is a new visitor.
-
-
-- Cookie__utmt_sfga
-- Duration10 minutes
-- DescriptionSet by Google Analytics and Google Tag Manager to enable website owners to track visitor behaviour and measure site performance.
-
-
-- Cookie_ga_*
-- Duration1 year 1 month 4 days
-- DescriptionGoogle Analytics sets this cookie to store and count page views.
-
-
-- Cookie_ga
-- Duration1 year 1 month 4 days
-- DescriptionGoogle Analytics sets this cookie to calculate visitor, session and campaign data and track site usage for the site's analytics report. The cookie stores information anonymously and assigns a randomly generated number to recognise unique visitors.
-
-
-- Cookie_gid
-- Duration1 day
-- DescriptionGoogle Analytics sets this cookie to store information on how visitors use a website while also creating an analytics report of the website's performance. Some of the collected data includes the number of visitors, their source, and the pages they visit anonymously.
-
-
-- Cookie_gat_UA-*
-- Duration1 minute
-- DescriptionGoogle Analytics sets this cookie for user behaviour tracking.
-
-
-- Cookie__hstc
-- Duration6 months
-- DescriptionHubspot set this main cookie for tracking visitors. It contains the domain, initial timestamp (first visit), last timestamp (last visit), current timestamp (this visit), and session number (increments for each subsequent session).
-
-
-- Cookiehubspotutk
-- Duration6 months
-- DescriptionHubSpot sets this cookie to keep track of the visitors to the website. This cookie is passed to HubSpot on form submission and used when deduplicating contacts.
-
-
-- Cookie_fbp
-- Duration3 months
-- DescriptionFacebook sets this cookie to display advertisements when either on Facebook or on a digital platform powered by Facebook advertising after visiting the website.
-
-
-- Cookie__utma
-- Duration1 year 1 month 4 days
-- DescriptionGoogle Analytics sets this cookie to distinguish users and sessions. The cookie is created when the JavaScript library executes and there are no existing __utma cookies. The cookie is updated every time data is sent to Google Analytics.
-
-
-- Cookie__utmc
-- Durationsession
-- DescriptionGoogle Analytics sets this cookie to enable interoperability with urchin.js, an older version of Google Analytics and is used in conjunction with the __utmb cookie to determine new sessions/visits. It is deleted when the user closes the browser.
-
-
-- Cookie__utmb
-- Duration1 hour
-- DescriptionGoogle Analytics sets this cookie to determine new sessions/visits. __utmb cookie is created when the JavaScript library executes and there are no existing __utma cookies. It is updated every time data is sent to Google Analytics.
-
-
-- Cookiecf_clearance
-- Duration1 year
-- DescriptionCloudflare sets the cookie to manage and verify CAPTCHA challenges, ensuring that legitimate users can access the website while blocking malicious traffic.
-
-Performance cookies are used to understand and analyse the key performance indexes of the website which helps in delivering a better user experience for the visitors.
-
-No cookies to display.
-
-Advertisement cookies are used to provide visitors with customised advertisements based on the pages you visited previously and to analyse the effectiveness of the ad campaigns.
-
-No cookies to display.
-
-Other uncategorised cookies are those that are being analysed and have not been classified into a category as yet.
-
-No cookies to display.
-
-![Cookieyes logo](https://cdn-cookieyes.com/assets/images/poweredbtcky.svg)
-
-![profile photo](https://coach-courses-us.s3.amazonaws.com/users/photos/thumb/67730.jpg?1721412873)
-
-
-- View AllMark all as read
-- Plant 4
-    Created with Sketch.
-    
-    
-        
-            
-                
-                    
-                    
-                    
-                        
-                        
-                    
-                    
-                        
-                        
-                    
-                
-            
-        
-    
-Jorge Armando Cortes Montiel evaluated Task 3.3 as Approved
- about 1 month ago
-- Plant 4
-    Created with Sketch.
-    
-    
-        
-            
-                
-                    
-                    
-                    
-                        
-                        
-                    
-                    
-                        
-                        
-                    
-                
-            
-        
-    
-Jorge Armando Cortes Montiel evaluated Task 3.2 as Approved
- about 1 month ago
-- Plant 2
-    Created with Sketch.
-    
-    
-        
-            
-                
-                    
-                    
-                    
-                        
-                        
-                    
-                
-            
-        
-    
-Vivek Maskara evaluated Task 3.2 as A little more
- 8 months ago
-- Plant 4
-    Created with Sketch.
-    
-    
-        
-            
-                
-                    
-                    
-                    
-                        
-                        
-                    
-                    
-                        
-                        
-                    
-                
-            
-        
-    
-Vivek Maskara evaluated Task 3.1 as Approved
- 9 months ago
-- Plant 4
-    Created with Sketch.
-    
-    
-        
-            
-                
-                    
-                    
-                    
-                        
-                        
-                    
-                    
-                        
-                        
-                    
-                
-            
-        
-    
-Vivek Maskara evaluated Task 2.9 as Approved
- 9 months ago
-- Plant 4
-    Created with Sketch.
-    
-    
-        
-            
-                
-                    
-                    
-                    
-                        
-                        
-                    
-                    
-                        
-                        
-                    
-                
-            
-        
-    
-Vivek Maskara evaluated Task 2.8 as Approved
- 9 months ago
-
-![avatar](https://coach-courses-us.s3.amazonaws.com/users/photos/thumb/67730.jpg?1721412873)
-
-
-- Oliver Oliverio
-- Settings
-- Logout
-
-
 ## Server-Side Programming & Node.js
 
 
@@ -469,7 +46,7 @@ Based on what you’ve coded so far, the data you have exposed from your web ser
 
 Authentication and authorization are two closely related concepts that refer to controlling who has access to which parts of your API. Authentication is the process of verifying a client’s identity, whereas authorization is the process of verifying that a client is allowed to take a certain action. While it’s possible to authorize a client without authenticating them (anonymous clients who don’t provide an identity could be authorized for certain actions), authentication and authorization usually go hand-in-hand.
 
-![Authentication vs. Authorization](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E9/authentication_vs_authorization.jpg)
+![Authentication vs. Authorization](images/auth/authentication_vs_authorization_1750129079285.jpg)
 
 
 ###### Figure 1
@@ -539,7 +116,7 @@ The next form of authentication you’ll be looking into is key-based authentica
 
 This API key is generated by the API the first time a client (and its user) registers with the app. Then, just like the username and password with basic HTTP authentication, the API key would be passed alongside every request from the client to the API. For example, say a curriculum team in an office wanted to use your image server to host images for their online course materials. They’d consistently be making requests to your API to upload new images. If you allowed the team to register for an API key, they could use (or create) an image uploading software that submits this API key automatically with every request to your API, thus authenticating every upload.
 
-![Screenshot of the connection screen on Cyberduck that includes fields for a server, URL, access key ID, and secret access key](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E9/Cyberduck%20connection%20screen.png)
+![Screenshot of the connection screen on Cyberduck that includes fields for a server, URL, access key ID, and secret access key](images/ui/Cyberduck_20connection_20screen_1750129079502.png)
 
 
 ###### Figure 2. The program Cyberduck allows you to connect to a remote server and upload files. Here, you can see the connection screen for the Amazon Cloud Server, which requires a server name, URL endpoint, and access key ID to connect. It additionally requires a “secret access key” for even greater security.
@@ -574,7 +151,7 @@ With those two methods out of the way, let’s take a look at an even better opt
 
 Session-based authentication (also known as cookie-based authentication) involves the creation of a session ID that can be used to authenticate users. After a user makes an initial login request to an application via a client, the server creates a session for that client, then sends back a session ID. The client stores this session ID in the user’s browser as a cookie. The server, meanwhile, stores the session ID “in-memory” (i.e., not in an external database). This approach can also be used for authorization, as the server could additionally map information about what parts of the application the client should be able to access with their session ID.
 
-![Cookie-Based Authentication and Authorization](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E9/cookie_auth.jpg)
+![Cookie-Based Authentication and Authorization](images/auth/cookie_auth_1750129079693.jpg)
 
 
 ###### Figure 3
@@ -604,7 +181,7 @@ JWT—JSON Web Token—is a JSON-based standard for creating web tokens that can
 
 With JWT authentication, the client makes a request to the server-side of an application, after which the server generates a web token that represents an encoded version of some claim—for instance, the client’s identity, what the client should have access to, and for what length of time they should be allowed access to it—and sends this token back to the client. The client stores this JWT and sends it alongside every subsequent request to the API, where the server then validates it in order to verify the client’s identity and process its requests.
 
-![JWT Token-Based Authentication and Authorization](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E9/jwt_auth.jpg)
+![JWT Token-Based Authentication and Authorization](images/auth/jwt_auth_1750129080104.jpg)
 
 
 ###### Figure 4
@@ -617,7 +194,7 @@ The “header” component contains information about the type of token (which, 
 
 The server normally generates the JWT by way of a secret key that encodes the three pieces of information above. Because only the server itself knows this key, the encoding can’t be decrypted like the basic Base64 encoding used for HTTP authentication. The final JWT would look something like this:
 
-![A long series of random letters and numbers separated by two periods into three parts](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E9/JWT%20example.png)
+![A long series of random letters and numbers separated by two periods into three parts](images/auth/JWT_20example_1750129080362.png)
 
 
 ###### Figure 5
@@ -644,7 +221,7 @@ Open Authorization, or “OAuth,” is an authentication and authorization frame
 
 The best example of this is when you go to sign into a website and are offered a number of options for how to do so. For example, you may be given the option to sign in with Google, Facebook, or Twitter. These three sites can act as third party services through which you can be authenticated, giving you access to the original website.
 
-![Screenshot of the sign-in page for Medium, including Google, Facebook, Twitter, and email options](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E9/Medium%20signin%20page.png)
+![Screenshot of the sign-in page for Medium, including Google, Facebook, Twitter, and email options](images/ui/Medium_20signin_20page_1750129080524.png)
 
 
 ###### Figure 6. Medium’s sign in options: Google, Facebook, Twitter, and email.
@@ -661,7 +238,7 @@ Now that you’ve explored the main options for authentication (and authorizatio
 
 Your initial user authentication will be handled by basic HTTP authentication. For instance, when registered users make a login request, they’ll provide a username and password, which will be sent within the header of the HTTP request. Then, as a result of the initial login request and authentication, your application will generate a JWT for the user. This will allow subsequent requests to be authenticated and authorized with JWT-based authentication.
 
-![Authentication and Authorization for myFlix](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E9/myflix_auth.jpg)
+![Authentication and Authorization for myFlix](images/auth/myflix_auth_1750129080736.jpg)
 
 
 ###### Figure 7
@@ -898,7 +475,7 @@ Now that you’ve implemented your code, the first thing you’ll want to do is 
 
 In Postman, try making a general `GET` request to the “/movies” endpoint. You should receive a response that looks like this:
 
-[](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E9/Unauthorized%20GET%20request%20in%20Postman.png)
+[](images/auth/Unauthorized_20GET_20request_20in_20Postman_1750129081253.png)
 
 
 ###### Figure 8 (Click to Zoom)
@@ -907,21 +484,21 @@ Hopefully, you'll receive the message “Unauthorized”; otherwise your JWT aut
 
 To do this, start by submitting a `POST` request to the “/users” endpoint that includes a new username and password:
 
-[](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E9/post_new_user.png)
+[](images/misc/post_new_user_1750129081477.png)
 
 
 ###### Figure 9 (Click to Zoom)
 
 Next, submit another `POST` request to the new login endpoint you created earlier, only this time, rather than sending along a JSON body, you’ll be sending along “parameters.” Click the Params or Body tab on the far left (passport already knows to look for the user credentials within the request’s parameters and body), where you’ll be given a table of key-value pairs you can enter. Start by typing “Username” in the first key field, followed by the username of the user you just posted in the value field. Underneath this, type “Password” in the next key field, followed by the password of the user you just posted in its value field. You’ll notice that the URL endpoint updates automatically to include the username and password. This will authenticate your identity via basic HTTP authentication and assign you a JWT:
 
-[](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E9/login_endpoint_keys_values.png)
+[](images/auth/login_endpoint_keys_values_1750129081679.png)
 
 
 ###### Figure 10 (Click to Zoom)
 
 You should receive a response with the details of the user and, beneath everything, a new “token” field. This is your JWT! You should now be able to make your original request once again. Resend your `GET` request to the “/movies” endpoint, this time passing along your JWT by clicking on Authorization, selecting Bearer Token from the Type dropdown menu, then entering your JWT token into the field:
 
-[](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E9/bearer_token_authorization.png)
+[](images/auth/bearer_token_authorization_1750129081967.png)
 
 
 ###### Figure 11 (Click to Zoom)
@@ -1035,7 +612,7 @@ Rubric
 
 Refer to the categories below to see how to meet the requirements of the approved stage
 
-![](https://cdn.careerfoundry.com/assets/rubrics/not_yet-c9fb80e521507759d546f847f8a65a00c66f2c8ec7ece4e37f98c25aa122778c.svg)
+![](images/icons/not_yet-c9fb80e521507759d546f847f8a65a00c66f2c8ec7ece4e37f98c25aa122778c_1750129080976.svg)
 
 
 - Submission is missing complete files, for instance, a “passport.js” file or “auth.js” file, and no Passport strategies have been integrated into existing API endpoints; OR
@@ -1043,7 +620,7 @@ Refer to the categories below to see how to meet the requirements of the approve
 - Passport strategies haven’t been integrated into all existing API endpoints; OR
 - No file of screenshots has been included in the submission
 
-![](https://cdn.careerfoundry.com/assets/rubrics/almost_there-f4bb1c077a0a826e7d4e3ecb72859fc401d362d9bd49c0658f4fd85c4a047a87.svg)
+![](images/icons/almost_there-f4bb1c077a0a826e7d4e3ecb72859fc401d362d9bd49c0658f4fd85c4a047a87_1750129080997.svg)
 
 
 - “passport.js” file includes a LocalStrategy and JWTStrategy, but there are issues in the code; AND
@@ -1051,7 +628,7 @@ Refer to the categories below to see how to meet the requirements of the approve
 - Passport strategies have been integrated into existing API endpoints, but there are issues in the code; AND
 - File is included with screenshots of each method tested in Postman
 
-![](https://cdn.careerfoundry.com/assets/rubrics/approved-7dfdcf59318cf52fcbd1333d8b71bf7a2bde35b6e0b753ac975349982495e0b4.svg)
+![](images/icons/approved-7dfdcf59318cf52fcbd1333d8b71bf7a2bde35b6e0b753ac975349982495e0b4_1750129081020.svg)
 
 
 - A new “passport.js” file has been added to the project that includes a LocalStrategy and JWTStrategy
@@ -1067,7 +644,7 @@ Check out recently submitted work by other students to get an idea of what’s r
 
 EVALUATION COMPLETE
 
-![](https://coach-courses-us.s3.amazonaws.com/users/photos/thumb/51945.jpg?1660008090)
+![](images/avatars/51945_1750129081040.jpg)
 
 Vivek Maskara
 
@@ -1116,7 +693,7 @@ Vivek
 
 Approved
 
-![Lauren, Sarah, Korina, CareerFoundry Student Advisor](https://images.careerfoundry.com/public/team/student_advisors_july_2020.jpg)
+![Lauren, Sarah, Korina, CareerFoundry Student Advisor](images/misc/student_advisors_july_2020_1750129081137.jpg)
 
 Student Advisors
 
@@ -1128,7 +705,7 @@ How motivated do you feel after receiving the feedback from your tutor/mentor?
 
 Did your mentor or tutor respond within the expected timeframe? (24hrs for tutors; 48 hrs for mentors)
 
-![](https://coach-courses-us.s3.amazonaws.com/users/photos/thumb/67730.jpg?1721412873)
+![](images/avatars/67730_1750129081160.jpg)
 
 Oliver Oliverio  Submitted Something for Task 2.9
 

@@ -59,7 +59,7 @@ One of the most common patterns of architecture for web services/APIs is Represe
 
 Generally, REST employs HTTP (Hypertext Transfer Protocol), the most common protocol for data communication over the internet. Requests over HTTP contain an “HTTP request method” that indicates what operation is to be performed on the resource being requested. It’s the job of a REST API to read an HTTP request, apply the appropriate operation to the resource being requested, and send back an HTTP response that indicates whether it was successful.
 
-![Diagram of the flow between an HTTP request and an HTTP response](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E5/HTTP%20Request%20and%20Response%20diagram.jpg)
+![Diagram of the flow between an HTTP request and an HTTP response](images/diagrams/HTTP_20Request_20and_20Response_20diagram_1750129067655.jpg)
 
 
 ###### Figure 1
@@ -87,7 +87,7 @@ As with APIs, CRUD isn’t limited to the realm of the web. Most applications ha
 
 When it comes to web applications, however, users (or other computer programs) aren’t interfacing directly with the data itself; rather, they’re interfacing with a web server that is, in turn, interacting with the data.
 
-![Diagram showing the relationships between POST, GET, PUT, and DELETE with CRUD operators CREATE, READ, UPDATE, and DELETE](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E5/client_server_data.jpg)
+![Diagram showing the relationships between POST, GET, PUT, and DELETE with CRUD operators CREATE, READ, UPDATE, and DELETE](images/misc/client_server_data_1750129067810.jpg)
 
 
 ###### Figure 2
@@ -246,7 +246,7 @@ Let’s start by taking a closer look at the request and response bodies (the th
 
 In the previous section, we provided a table of various requests (such as `GET`) you might make to an app for organizing student data along with their corresponding URL endpoints. Now, let’s take things one step further by visualizing what format you might want your API to expect for the “body” data in each request and response. Take a look at the table below, noting, in particular, the two “body data” columns that have been added on the right:
 
-![URL endpoint table](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E5/table_1.jpg)
+![URL endpoint table](images/misc/table_1_1750129068079.jpg)
 
 
 ###### Figure 5
@@ -600,7 +600,7 @@ This time, the code is routed for `POST` requests. The code takes data from the 
 
 You’ll also see that the request is still paired with a response, which, in this case, is the object `newStudent`. (Remember, all requests should give some type of response—for instance, a confirmation message—even if the request wasn’t specifically to retrieve data.) Do you remember the response body data that was specified in the original table?
 
-![URL endpoint table](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E5/URL%20endpoint%20table.jpg)
+![URL endpoint table](images/misc/URL_20endpoint_20table_1750129068328.jpg)
 
 
 ###### Figure 7
@@ -649,7 +649,7 @@ By passing `:name` as a request parameter (i.e., as a placeholder for this parti
 
 As discussed earlier, there are some methods (like `GET` and `PUT`) for which all the data you need about the request is retrieved through the request URL itself (which is why you don’t need to include anything in the body data). For the `POST` request, however, you’ll want new student data to be passed as JSON through the “body” of the HTTP request. Take a look at the table below for a refresher:
 
-![URL endpoint table](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E5/URL%20endpoint%20table.jpg)
+![URL endpoint table](images/misc/URL_20endpoint_20table_1750129068538.jpg)
 
 
 ###### Figure 8
@@ -795,7 +795,7 @@ Go ahead and start by [downloading Postman](https://www.getpostman.com/apps).
 
 The website will likely detect whether you’re browsing on Windows, Mac, or Linux, but if not, go ahead and choose your operating system to download the correct version. Once the download is complete, open the Postman application on your device, create an account, and continue skipping the set-up steps displayed until you’re presented with a screen like the following (Figure 9):
 
-![The main Postman workspace](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E5/postman-scratch-pad.png)
+![The main Postman workspace](images/misc/postman-scratch-pad_1750129068618.png)
 
 
 ###### Figure 9
@@ -806,26 +806,26 @@ To start, you’ll want to create a new collection for your requests. A collecti
 
 To create a collection, click New (Figure 10), and select Collection from the options provided (Figure 11). A “New Collection” tab will appear.
 
-![Selecting “New” in Postman, to create a new Collection](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E5/new-button.png)
+![Selecting “New” in Postman, to create a new Collection](images/misc/new-button_1750129068832.png)
 
 
 ###### Figure 10
 
-![Selecting “Collection” in Postman, to create a new Collection](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E5/new-collection.png)
+![Selecting “Collection” in Postman, to create a new Collection](images/misc/new-collection_1750129068981.png)
 
 
 ###### Figure 11
 
 In this particular case, you could name the collection “Student REST API Requests,” since all the requests you’ll be testing are concerned with the Student REST API example. Go ahead and add a name for your new collection.
 
-![Naming a Collection in Postman](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E5/new-named-collection.png)
+![Naming a Collection in Postman](images/misc/new-named-collection_1750129069208.png)
 
 
 ###### Figure 12
 
 Now that you have a collection, it’s time to add some requests to it. You should see the new collection you just made in the left-hand pane. If you hover over it, a button with three dots should appear. Click this button to reveal a pulldown menu, then select Add request (Figure 13).
 
-![The new Student REST API Requests collection with the menu pulled down to the “Add request” option](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E5/add-request.png)
+![The new Student REST API Requests collection with the menu pulled down to the “Add request” option](images/misc/add-request_1750129069379.png)
 
 
 ###### Figure 13
@@ -834,14 +834,14 @@ This will open a “New Request” tab similar to the “New Collection” tab y
 
 At the top of the panel you should see a URL bar with the words “Enter request URL” currently displayed (Figure 14).
 
-![Entering a request URL](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E5/enter-url.png)
+![Entering a request URL](images/misc/enter-url_1750129069532.png)
 
 
 ###### Figure 14
 
 This is where you’ll enter the endpoint URL for this request as defined in your REST API—containing some actual sample data—to see if the endpoints work. For example, your “Get Student by Name” endpoint is a GET request with the URL “/students/[Name]”. As such, in Postman you could type the URL “http://localhost:8080/students/Ben%20Cohen” (as Ben Cohen is a student in your database) and ensure GET is selected from the request method dropdown to the left of the URL bar. The dropdown provides you with other request types, should you need them. However, the default is set to GET, which suits your purpose here well.
 
-![Naming a request in Postman and entering your request URL with actual data](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E5/get-student-by-name.png)
+![Naming a request in Postman and entering your request URL with actual data](images/misc/get-student-by-name_1750129069722.png)
 
 
 ###### Figure 15
@@ -856,7 +856,7 @@ To test your API, you’ll need to start by running the actual API code from wit
 
 With your API running, back in Postman you can click Send to the right of the URL bar containing your GET request. You should see the “response” JSON show up in the bottom half of the screen (Figure 16). This is the code that would be sent back to the client.
 
-![Screenshot showing the JSON response after sending the h<span></span>ttp://localhost:8080/students/Ben%20Cohen request URL with the GET HTTP method](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E5/get-student-name-json.png)
+![Screenshot showing the JSON response after sending the h<span></span>ttp://localhost:8080/students/Ben%20Cohen request URL with the GET HTTP method](images/misc/get-student-name-json_1750129069924.png)
 
 
 ###### Figure 16
@@ -865,7 +865,7 @@ This response tells you whether or not your REST API endpoints are working. Here
 
 Now, try creating a new GET request for getting all students, using the URL “http://localhost:8080/students/” and sending the new request. This should broaden the data that’s returned from one student to all of them.
 
-![The JSON response after sending the http://localhost:8080/students/ URL with the GET HTTP method](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E5/get-students-json.png)
+![The JSON response after sending the http://localhost:8080/students/ URL with the GET HTTP method](images/misc/get-students-json_1750129070070.png)
 
 
 ###### Figure 17
@@ -878,7 +878,7 @@ This is exactly what you wanted to happen. Your POST request is supposed to incl
 
 Now, let’s give the request some data. To add data to the request body, click the Body header underneath the URL bar. Then, beneath that, click raw and change the dropdown to the right from Text to JSON.
 
-![The POST request method with JSON selected, ](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E5/raw-json.png)
+![The POST request method with JSON selected, ](images/misc/raw-json_1750129070291.png)
 
 
 ###### Figure 18
@@ -1216,20 +1216,20 @@ Rubric
 
 Refer to the categories below to see how to meet the requirements of the approved stage
 
-![](https://cdn.careerfoundry.com/assets/rubrics/not_yet-c9fb80e521507759d546f847f8a65a00c66f2c8ec7ece4e37f98c25aa122778c.svg)
+![](images/icons/not_yet-c9fb80e521507759d546f847f8a65a00c66f2c8ec7ece4e37f98c25aa122778c_1750129070476.svg)
 
 
 - Submission doesn’t include a link to the GitHub repo or a zipped folder of screenshots, or includes a GitHub repo not related to the project; OR
 - GitHub repo submitted and includes a “documentation.html” file, but not all endpoints documented and some required information may also be missing; AND
 - A zipped folder of screenshots has been included, but not every endpoint has been tested
 
-![](https://cdn.careerfoundry.com/assets/rubrics/almost_there-f4bb1c077a0a826e7d4e3ecb72859fc401d362d9bd49c0658f4fd85c4a047a87.svg)
+![](images/icons/almost_there-f4bb1c077a0a826e7d4e3ecb72859fc401d362d9bd49c0658f4fd85c4a047a87_1750129070499.svg)
 
 
 - GitHub repo submitted and includes a “documentation.html” file, and all endpoints have been documented, but some of the required information is missing or could be expanded upon; AND
 - A zipped folder of screenshots submitted showing the response of each endpoint being tested in Postman
 
-![](https://cdn.careerfoundry.com/assets/rubrics/approved-7dfdcf59318cf52fcbd1333d8b71bf7a2bde35b6e0b753ac975349982495e0b4.svg)
+![](images/icons/approved-7dfdcf59318cf52fcbd1333d8b71bf7a2bde35b6e0b753ac975349982495e0b4_1750129070520.svg)
 
 
 - GitHub repo submitted and includes a “documentation.html” file with complete descriptions for every endpoint; AND
@@ -1243,7 +1243,7 @@ Check out recently submitted work by other students to get an idea of what’s r
 
 EVALUATION COMPLETE
 
-![](https://coach-courses-us.s3.amazonaws.com/users/photos/thumb/51945.jpg?1660008090)
+![](images/avatars/51945_1750129070540.jpg)
 
 Vivek Maskara
 
@@ -1297,7 +1297,7 @@ Vivek
 
 Approved
 
-![Lauren, Sarah, Korina, CareerFoundry Student Advisor](https://images.careerfoundry.com/public/team/student_advisors_july_2020.jpg)
+![Lauren, Sarah, Korina, CareerFoundry Student Advisor](images/misc/student_advisors_july_2020_1750129070638.jpg)
 
 Student Advisors
 
@@ -1309,7 +1309,7 @@ How motivated do you feel after receiving the feedback from your tutor/mentor?
 
 Did your mentor or tutor respond within the expected timeframe? (24hrs for tutors; 48 hrs for mentors)
 
-![](https://coach-courses-us.s3.amazonaws.com/users/photos/thumb/67730.jpg?1721412873)
+![](images/avatars/67730_1750129070661.jpg)
 
 Oliver Oliverio  Submitted Something for Task 2.5
 

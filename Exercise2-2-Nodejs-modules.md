@@ -41,7 +41,7 @@ You should be fairly familiar with this concept of code-separation already. For 
 
 This is the exact philosophy that Node modules are built on. Each Node module represents a very specific purpose, for instance, a module for creating a web server, a module for parsing URLs, and a module for interacting with file systems. You can “plug” these modules into your own app when you need them, much like the plug-and-play devices you can plug into your computer. A module in Node.js can be as small and simple as a single JavaScript file or as big and intricate as a whole set of JavaScript files (with the complex functionality to match), all of which can be reused throughout your app as many times as you want.
 
-![Diagram of printers, scanners, and various storage devices plugged into a PC](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E2/Diagram%20of%20printers%2C%20scanners%20and%20various%20storage%20devices%20plugged%20into%20a%20computer.png)
+![Diagram of printers, scanners, and various storage devices plugged into a PC](images/diagrams/Diagram_20of_20printers_2C_20scanners_20and_20various_20storage_20devices_20plugged_20into_20a_20computer_1750129060172.png)
 
 
 ###### Figure 1. Image source: Desk Decode
@@ -393,7 +393,7 @@ The first line of code creates a variable called `http`, then assigns to it an i
 
 Following this, the `createServer()` function is called on the new `http` variable you’ve created. Within this function is yet another function that has two arguments—`request` and `response`. This function will be called every time an HTTP request is made against that server, which is why it’s called the request handler.
 
-![Diagram showing an HTTP request going from the user to the client to the server, and an HTTP response being returned from the server to the client to the user](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E2/Request%20handler.jpg)
+![Diagram showing an HTTP request going from the user to the client to the server, and an HTTP response being returned from the server to the client to the user](images/misc/Request_20handler_1750129060337.jpg)
 
 
 ###### Figure 2
@@ -402,7 +402,7 @@ Within this function are two additional lines of code: the first tells the serve
 
 At the end of this function, the server is set to listen for requests on port 8080 using the `listen()` function. Port 80 is the standard port for HTTP, but you can use any number you want with the following caveat: the port number must be greater than 1024. This is because ports lower than this are reserved by the operating system.
 
-![Color-coded diagram of the HTTP module being used to create a new web server running on port 8080.](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E2/Diagram%20of%20an%20HTTP%20module%20being%20used%20to%20create%20a%20new%20web%20server.png)
+![Color-coded diagram of the HTTP module being used to create a new web server running on port 8080.](images/diagrams/Diagram_20of_20an_20HTTP_20module_20being_20used_20to_20create_20a_20new_20web_20server_1750129060515.png)
 
 
 ###### Figure 3
@@ -411,7 +411,7 @@ Every time an HTTP request hits the server, Node will call this request handler 
 
 Once you’ve added this code, save your “server.js” file and open your terminal. Your JavaScript file is ready to create the server, but first you need to execute the file using Node. Remember that to run your JavaScript file in Node, you need to type (in the terminal) `node` followed by the name of the file. Do so now with your “server.js” file, and you should see something similar to the following screens:
 
-![Screenshot of both a code editor and the terminal open, with the “server.js” code visible in the code editor and being executed to create a new server in the terminal.](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E2/Atom%20displaying%20server.js%20code%20and%20terminal%20window%20executing%20code.png)
+![Screenshot of both a code editor and the terminal open, with the “server.js” code visible in the code editor and being executed to create a new server in the terminal.](images/misc/Atom_20displaying_20server.js_20code_20and_20terminal_20window_20executing_20code_1750129060707.png)
 
 
 ###### Figure 4
@@ -420,7 +420,7 @@ You’ll know right away if your file was executed successfully because of the c
 
 Head over to your browser and type the IP address for your new server, “http://127.0.0.1:8080/”, into the URL bar. (“127.0.0.1” is simply the loopback IP address of your computer. Here, you’re essentially creating a connection between your browser and your own computer server on the 8080 port.) Your browser should respond by displaying the following:
 
-![Screenshot of the browser directed to 127.0.0.1:8080 and the words “Hello Node!” displayed on screen](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E2/Browser%20directing%20to%20IP%20address%20and%20screen%20displaying%20Hello%20Node.png)
+![Screenshot of the browser directed to 127.0.0.1:8080 and the words “Hello Node!” displayed on screen](images/ui/Browser_20directing_20to_20IP_20address_20and_20screen_20displaying_20Hello_20Node_1750129060877.png)
 
 
 ###### Figure 5
@@ -694,7 +694,7 @@ node inspect myscript.js
 
 The `inspect` argument is the built-in argument for the debugger. You can use it whenever you want to debug a file. Once the debugger has launched, you should see the confirmation “Debugger attached” followed by the code included in your file. At the end, you’ll see the prompt `debug>`, which will let you type further debugging commands.
 
-![Screenshot of the Terminal with the node inspect command being used on the test.js file and the resulting debug code popping up](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E2/Terminal%20with%20node%20inspect%20command%20being%20used.png)
+![Screenshot of the Terminal with the node inspect command being used on the test.js file and the resulting debug code popping up](images/misc/Terminal_20with_20node_20inspect_20command_20being_20used_1750129061030.png)
 
 
 ###### Figure 6
@@ -793,7 +793,7 @@ Rubric
 
 Refer to the categories below to see how to meet the requirements of the approved stage
 
-![](https://cdn.careerfoundry.com/assets/rubrics/not_yet-c9fb80e521507759d546f847f8a65a00c66f2c8ec7ece4e37f98c25aa122778c.svg)
+![](images/icons/not_yet-c9fb80e521507759d546f847f8a65a00c66f2c8ec7ece4e37f98c25aa122778c_1750129061250.svg)
 
 
 - Submission doesn’t include a link to the GitHub repo or includes a GitHub repo not related to the project; OR
@@ -801,13 +801,13 @@ Refer to the categories below to see how to meet the requirements of the approve
 - Submission includes a “server.js” file but  is missing one or more of the imported modules (http, url, fs); OR
 - Submission includes a “documentation.html” file but it is empty or missing a title or basic description of the API
 
-![](https://cdn.careerfoundry.com/assets/rubrics/almost_there-f4bb1c077a0a826e7d4e3ecb72859fc401d362d9bd49c0658f4fd85c4a047a87.svg)
+![](images/icons/almost_there-f4bb1c077a0a826e7d4e3ecb72859fc401d362d9bd49c0658f4fd85c4a047a87_1750129061635.svg)
 
 
 - Submission includes all the relevant files but the code has syntax errors or doesn’t return the desired response to the user; OR
 - The desired response is sent to the user but the “log.txt” file is missing the URL or timestamp (or both)
 
-![](https://cdn.careerfoundry.com/assets/rubrics/approved-7dfdcf59318cf52fcbd1333d8b71bf7a2bde35b6e0b753ac975349982495e0b4.svg)
+![](images/icons/approved-7dfdcf59318cf52fcbd1333d8b71bf7a2bde35b6e0b753ac975349982495e0b4_1750129062073.svg)
 
 
 - Submission includes all of the following:
@@ -823,7 +823,7 @@ Check out recently submitted work by other students to get an idea of what’s r
 
 EVALUATION COMPLETE
 
-![](https://coach-courses-us.s3.amazonaws.com/users/photos/thumb/51945.jpg?1660008090)
+![](images/avatars/51945_1750129062347.jpg)
 
 Vivek Maskara
 
@@ -870,7 +870,7 @@ Vivek
 
 Approved
 
-![Lauren, Sarah, Korina, CareerFoundry Student Advisor](https://images.careerfoundry.com/public/team/student_advisors_july_2020.jpg)
+![Lauren, Sarah, Korina, CareerFoundry Student Advisor](images/misc/student_advisors_july_2020_1750129062665.jpg)
 
 Student Advisors
 
@@ -882,7 +882,7 @@ How motivated do you feel after receiving the feedback from your tutor/mentor?
 
 Did your mentor or tutor respond within the expected timeframe? (24hrs for tutors; 48 hrs for mentors)
 
-![](https://coach-courses-us.s3.amazonaws.com/users/photos/thumb/67730.jpg?1721412873)
+![](images/avatars/67730_1750129062828.jpg)
 
 Oliver Oliverio  Submitted Something for Task 2.2
 

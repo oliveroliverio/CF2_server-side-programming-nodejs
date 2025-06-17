@@ -15,7 +15,8 @@
     "seed:postgresql": "node movie_api/postgresql/utils/seedDatabase.js",
     "update:directors": "node movie_api/postgresql/utils/updateDirectors.js",
     "docs:generate": "node movie_api/shared/utils/generateDocs.js",
-    "docs:watch": "node movie_api/shared/utils/watchAndGenerateDocs.js"
+    "docs:watch": "node movie_api/shared/utils/watchAndGenerateDocs.js",
+    "download-images": "node scripts/download-markdown-images.js"
   },
   "keywords": [
     "movies",

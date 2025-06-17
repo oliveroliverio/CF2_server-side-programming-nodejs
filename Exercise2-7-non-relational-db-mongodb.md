@@ -94,7 +94,7 @@ Let’s start by taking a look at how MongoDB databases are structured.
 
 In relational databases, data is organized into “tables” of “records” (where each row is one record). With MongoDB, on the other hand, data is organized into “collections” of “documents.” For instance, a table in a relational database represents a single type of data entity, and a record represents an instance of that entity. This is different in MongoDB, where it’s a collection that represents a single type of data entity and a document that represents a single instance of that entity. You can think of a collection as a physical file folder where you store different documents. This is a key difference in terminology as collections of documents in NoSQL databases (usually) look nothing like tables.
 
-![Diagram showing relational versus document model](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E7/Relational%20vs%20document%20model.jpg)
+![Diagram showing relational versus document model](images/misc/Relational_20vs_20document_20model_1750129074608.jpg)
 
 
 ###### Figure 1
@@ -312,7 +312,7 @@ For your myFlix application, you won’t be working with an especially large dat
 
 Before we move on to setting up MongoDB for your project, let’s look into one last thing you’ll need to account for when creating your database. Remember that each of your myFlix users will be able to create a list of their favorite movies. As was discussed in the previous Exercise, this is a many-to-many relationship—each user has many favorite movies, and each movie has many users who’ve selected it as a favorite. Take a look at the following image:
 
-![Many to many relationship between users and their favorite movies](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E7/figure3.png)
+![Many to many relationship between users and their favorite movies](images/misc/figure3_1750129074839.png)
 
 
 ###### Figure 3
@@ -506,7 +506,7 @@ Step 1. To install MongoDB, you’ll need to install [Homebrew](https://brew.sh/
 
 Step 2. If you don’t already have Homebrew installed, head to the [Homebrew website](https://brew.sh/) and follow the instructions for installing it:
 
-![Screenshot of Homebrew install page](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E7/Install%20Homebrew.png)
+![Screenshot of Homebrew install page](images/misc/Install_20Homebrew_1750129075002.png)
 
 
 ###### Figure 4.
@@ -540,7 +540,7 @@ Step 1. Download the latest version of MongoDB by heading over to the [official 
 
 Step 2. Make sure that “Windows” is selected as the platform and “msi” (Microsoft Software Installer, for installing packages on Windows OSs) is selected as the package, then download it.
 
-![MongoDB Windows download page](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E7/MongoDB%20Comm%20Server%20DL.png)
+![MongoDB Windows download page](images/misc/MongoDB_20Comm_20Server_20DL_1750129075260.png)
 
 
 ###### Figure 5.
@@ -566,7 +566,7 @@ Step 1. Start by heading over to the [MongoDB Shell](https://www.mongodb.com/try
 
 Step 2. Make sure that “Windows (MSI)” is selected as the platform and “msi” is selected as the package, then download it.
 
-![MongoDB Shell Download page](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E7/MongoDB%20Shell%20DL.png)
+![MongoDB Shell Download page](images/misc/MongoDB_20Shell_20DL_1750129075585.png)
 
 
 ###### Figure 6.
@@ -597,7 +597,7 @@ Step 1. Head over to the MongoDB [Database Tools download page](https://www.mong
 
 Step 2. Make sure that “Windows” is selected in the Platform dropdown list and “msi” is selected in the Package dropdown list, then click Download.
 
-![MongoDB Command Line Database Tools download page](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E7/MondoDB%20CLD%20tools%20DL.png)
+![MongoDB Command Line Database Tools download page](images/misc/MondoDB_20CLD_20tools_20DL_1750129075823.png)
 
 
 ###### Figure 7.
@@ -606,7 +606,7 @@ Step 3. Run the installer. Keep all the default settings.
 
 Step 4. Add the path to the MongoDB Database Tools to the PATH in system environment variables. Figure 8 demonstrates how to do this.
 
-[](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E7/2_7_add_to_Env_variables.gif)
+[](images/misc/2_7_add_to_Env_variables_1750129076768.gif)
 
 
 ###### Figure 8. (Click to Zoom)
@@ -655,7 +655,7 @@ To either create a new database or switch to a different database, type:
 
 If you type, for instance, `use cfDB` (and you haven’t created the “cfDB” database yet), MongoDB will create it for you, and “switch” to you being within this database. In the Figure 9 example, the database called `cfDB` was created.
 
-![Screenshot showing MongoDB creating database and switching user to it automatically](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E7/test.png)
+![Screenshot showing MongoDB creating database and switching user to it automatically](images/misc/test_1750129076042.png)
 
 
 ###### Figure 9.
@@ -727,7 +727,7 @@ The name of your collection should all be in lowercase. To create a collection f
 
 `db.createCollection("movies")`
 
-![Screenshot showing the creation of a movies collection](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E7/test%20movies.png)
+![Screenshot showing the creation of a movies collection](images/misc/test_20movies_1750129076198.png)
 
 
 ###### Figure 12.
@@ -833,7 +833,7 @@ The first command would find all documents for which the condition applies. The 
 
 `db.movies.findOne( { Title: "Silence of the Lambs" } )`
 
-![Search based off individual movie title ](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E7/SOTL%20details.png)
+![Search based off individual movie title ](images/misc/SOTL_20details_1750129076371.png)
 
 
 ###### Figure 13.
@@ -1148,7 +1148,7 @@ Rubric
 
 Refer to the categories below to see how to meet the requirements of the approved stage
 
-![](https://cdn.careerfoundry.com/assets/rubrics/not_yet-c9fb80e521507759d546f847f8a65a00c66f2c8ec7ece4e37f98c25aa122778c.svg)
+![](images/icons/not_yet-c9fb80e521507759d546f847f8a65a00c66f2c8ec7ece4e37f98c25aa122778c_1750129076593.svg)
 
 
 - Submission doesn’t include a JSON file, JSON file doesn’t contain data relevant to the project, or no zip file of screenshots has been included; OR
@@ -1156,13 +1156,13 @@ Refer to the categories below to see how to meet the requirements of the approve
 - JSON file is missing data (e.g., not enough movies, directors, genres, etc.); OR
 - Zip file doesn’t contain the required number of screenshots
 
-![](https://cdn.careerfoundry.com/assets/rubrics/almost_there-f4bb1c077a0a826e7d4e3ecb72859fc401d362d9bd49c0658f4fd85c4a047a87.svg)
+![](images/icons/almost_there-f4bb1c077a0a826e7d4e3ecb72859fc401d362d9bd49c0658f4fd85c4a047a87_1750129076616.svg)
 
 
 - Submission includes a JSON file and a zip folder of at least 16 screenshots of the following queries and their responses: 3 “READ” queries, 3 “UPDATE” queries, 1 “DELETE” query, and a final “READ” query; BUT
 - JSON file contains issues; either the documents aren’t well-formatted or the file itself contains an error
 
-![](https://cdn.careerfoundry.com/assets/rubrics/approved-7dfdcf59318cf52fcbd1333d8b71bf7a2bde35b6e0b753ac975349982495e0b4.svg)
+![](images/icons/approved-7dfdcf59318cf52fcbd1333d8b71bf7a2bde35b6e0b753ac975349982495e0b4_1750129076645.svg)
 
 
 - Submission includes a JSON file and a zip folder of screenshots; AND
@@ -1177,7 +1177,7 @@ Check out recently submitted work by other students to get an idea of what’s r
 
 EVALUATION COMPLETE
 
-![](https://coach-courses-us.s3.amazonaws.com/users/photos/thumb/51945.jpg?1660008090)
+![](images/avatars/51945_1750129076669.jpg)
 
 Vivek Maskara
 

@@ -274,7 +274,7 @@ To install and run Node and npm on your machine using nvm, check out the followi
 
 As mentioned earlier in this Exercise, a package is a file, directory, or module that contains a “package.json” file in its root folder. Check out the GitHub repo for any package in the JavaScript Package Registry and you’ll find this file. For instance, if you open up the [repo for the react module](https://github.com/facebook/react) and scroll down the list of folders and files, you’ll find “package.json” towards the bottom:
 
-![Screenshot of the react module’s GitHub repository with an arrow pointing to the “package.json” file.](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E3/react%20module%27s%20GitHub%20repo%20with%20package.json%20file.png)
+![Screenshot of the react module’s GitHub repository with an arrow pointing to the “package.json” file.](images/misc/react_20module_27s_20GitHub_20repo_20with_20package.json_20file_1750129063252.png)
 
 
 ###### Figure 1
@@ -288,14 +288,14 @@ This “package.json” file is an essential part of a package as it’s used to
 
 Let’s take a look at the [“package.json” file for a relatively small package, object-assign](https://github.com/sindresorhus/object-assign/blob/master/package.json). At the top of the file is the package’s metadata, which includes information about the package and its author:
 
-![Screenshot of the first section of the “package.json” file for the object-assign package, which includes the package’s name, version, description, license, repository, and author.](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E3/First%20section%20of%20the%20package.json%20file%20for%20object-assign%20package.png)
+![Screenshot of the first section of the “package.json” file for the object-assign package, which includes the package’s name, version, description, license, repository, and author.](images/misc/First_20section_20of_20the_20package.json_20file_20for_20object-assign_20package_1750129063440.png)
 
 
 ###### Figure 2
 
 You’ll also find information about the package’s engines, scripts, files, and keywords. Below all that, you’ll find its dependencies, which are listed with the version of each dependency required for the package to work properly. These are written according to semantic versioning rules, which you’ll be learning about later in this Exercise:
 
-![Screenshot of the dev dependencies section of the “package.json” file for the object-assign package, which includes the four packages ava, lodash, matcha, and xo.](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E3/dev%20dependencies%20section%20of%20package.json%20file.png)
+![Screenshot of the dev dependencies section of the “package.json” file for the object-assign package, which includes the four packages ava, lodash, matcha, and xo.](images/misc/dev_20dependencies_20section_20of_20package.json_20file_1750129063606.png)
 
 
 ###### Figure 3
@@ -333,7 +333,7 @@ In the last Achievement, you were introduced to JSON, or JavaScript Object Notat
 
 For this same reason, all JSON data has to be in plain text. When writing JSON documentation, JSON objects are written in key-value pairs `[{"key1":"value1"},{"key2":"value2"}]` (note: this is an array of two objects), as in the example JSON above (which has been copied down below again for you). It supports strings, numbers, booleans, null, arrays, and sub-objects, all nested in arbitrary depth—meaning you can assign as many objects inside objects as you want. For example, in the code below, the different development dependencies (the keys “ava”, “lodash”, “matcha”, and “xo”, with their corresponding values) are nested within the “devDependencies” object:
 
-![Screenshot of the dev dependencies section of the “package.json” file for the object-assign package, which includes the four packages ava, lodash, matcha, and xo.](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E3/dev%20dependencies%20section%20of%20package.json%20file.png)
+![Screenshot of the dev dependencies section of the “package.json” file for the object-assign package, which includes the four packages ava, lodash, matcha, and xo.](images/misc/dev_20dependencies_20section_20of_20package.json_20file_1750129063818.png)
 
 
 ###### Figure 4
@@ -436,7 +436,7 @@ Now, if you open your “package.json” file, you’ll see a new section header
 
 > If you type the cat package.json command into your terminal, your “package.json” file will be read and displayed so you can view the updated “dependencies” section:
 
-![Screenshot showing the terminal with the results of the cat package.json command. The command brings up the contents of the “package.json” file, which now shows the lodash package included under “Dependencies.”](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E3/Terminal%20displaying%20lodash%20package%20under%20dependencies.png)
+![Screenshot showing the terminal with the results of the cat package.json command. The command brings up the contents of the “package.json” file, which now shows the lodash package included under “Dependencies.”](images/misc/Terminal_20displaying_20lodash_20package_20under_20dependencies_1750129063918.png)
 
 
 ###### Figure 5
@@ -449,7 +449,7 @@ Since the “node_modules” folder is automatically created by `npm` and can be
 
 You’ll also notice a “lock” version of your “package.json” file—“package-lock.json.” This file keeps track of which versions of your locally installed packages your app relies on. When you deploy your app, the scripts will look at the “package-lock.json” file and grab all the appropriate versions of the packages your app needs to run.
 
-![Screenshot showing a folder “Test Project” open to reveal 3 files: “index.js,” “package-lock.json,” and “package.json.” It also includes a folder, “node_modules,” which is open to show another folder inside it, “lodash.” Within the “lodash” folder is a long list of JavaScript files.](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E3/Test%20Project%20folder%20with%203%20files.png)
+![Screenshot showing a folder “Test Project” open to reveal 3 files: “index.js,” “package-lock.json,” and “package.json.” It also includes a folder, “node_modules,” which is open to show another folder inside it, “lodash.” Within the “lodash” folder is a long list of JavaScript files.](images/misc/Test_20Project_20folder_20with_203_20files_1750129064088.png)
 
 
 ###### Figure 6
@@ -473,21 +473,21 @@ Let’s say you wanted to use `eslint` as your JavaScript code quality tool. Thi
 
 If you look at your “package.json” file now, you’ll see a new line for the “devDependencies” section. Beneath this header, you’ll see “eslint” listed:
 
-![Screenshot showing the terminal with the results of the cat package.json command. The command brings up the contents of the “package.json” file, which shows the eslint package under “Dev Dependencies.”](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E3/Terminal%20displaying%20eslint%20under%20dev%20dependencies.png)
+![Screenshot showing the terminal with the results of the cat package.json command. The command brings up the contents of the “package.json” file, which shows the eslint package under “Dev Dependencies.”](images/misc/Terminal_20displaying_20eslint_20under_20dev_20dependencies_1750129064242.png)
 
 
 ###### Figure 7
 
 But what does this look like in your GUI folder structure? Let’s take a look:
 
-![Screenshot showing a folder “Test Project” open to reveal 3 files: “index.js,” “package-lock.json,” and “package.json.” It also includes a folder, “node_modules,” which is open to show the folders inside of it. There are many folders. Currently, the “eslint” folder is selected, showing its contents, which include several files and folders, as well as its own “package.json” file.](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E3/Test%20Project%20root%20directory%20with%20eslint%20folder%20selected.png)
+![Screenshot showing a folder “Test Project” open to reveal 3 files: “index.js,” “package-lock.json,” and “package.json.” It also includes a folder, “node_modules,” which is open to show the folders inside of it. There are many folders. Currently, the “eslint” folder is selected, showing its contents, which include several files and folders, as well as its own “package.json” file.](images/misc/Test_20Project_20root_20directory_20with_20eslint_20folder_20selected_1750129064497.png)
 
 
 ###### Figure 8
 
 The big change you’ll see in your GUI folder structure is that the “node_modules” folder now contains a great number of new packages. How could this be? You didn’t install all these packages! Or did you? Remember how npm will automatically install dependencies of dependencies? That’s exactly what it did here. In fact, if you closely read the success message after you installed `eslint`, you’ll see that it actually installed a whopping 113 packages! Take a look:
 
-![Screenshot of the successfully installed message for eslint, saying that 113 packages have been added.](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E3/ESLint%20installation%20successful%20message.png)
+![Screenshot of the successfully installed message for eslint, saying that 113 packages have been added.](images/misc/ESLint_20installation_20successful_20message_1750129064756.png)
 
 
 ###### Figure 9
@@ -574,7 +574,7 @@ The word “dependencies” has already come up a great many times in this Exerc
 
 This is where the “package-lock.json” file that you saw earlier comes in (the new file created when using `npm init` to create your “package.json” file). If you open up your “package-lock.json” file, you’ll notice it looks very similar to your “package.json” file. There are, however, a few key differences. Let’s look at an example.
 
-![Screenshot of a package.json file with lodash, nodemailer and eslint installed](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E3/Package.json%20file%20with%20lodash%2C%20nodemailer%20and%20eslint%20installed.png)
+![Screenshot of a package.json file with lodash, nodemailer and eslint installed](images/misc/Package.json_20file_20with_20lodash_2C_20nodemailer_20and_20eslint_20installed_1750129064917.png)
 
 
 ###### Figure 10
@@ -685,7 +685,7 @@ Rubric
 
 Refer to the categories below to see how to meet the requirements of the approved stage
 
-![](https://cdn.careerfoundry.com/assets/rubrics/not_yet-c9fb80e521507759d546f847f8a65a00c66f2c8ec7ece4e37f98c25aa122778c.svg)
+![](images/icons/not_yet-c9fb80e521507759d546f847f8a65a00c66f2c8ec7ece4e37f98c25aa122778c_1750129065205.svg)
 
 
 - Submission doesn’t include a link to the GitHub repo or includes a GitHub repo not related to the project; OR
@@ -693,14 +693,14 @@ Refer to the categories below to see how to meet the requirements of the approve
 - Multiple packages are missing or incorrectly installed; AND
 - The “node_modules” folder was not added to “.gitignore”
 
-![](https://cdn.careerfoundry.com/assets/rubrics/almost_there-f4bb1c077a0a826e7d4e3ecb72859fc401d362d9bd49c0658f4fd85c4a047a87.svg)
+![](images/icons/almost_there-f4bb1c077a0a826e7d4e3ecb72859fc401d362d9bd49c0658f4fd85c4a047a87_1750129065224.svg)
 
 
 - GitHub repo has been submitted and includes a “package.json” file and a “package-lock.json” file; BUT
 - One of the four required packages (npm, nvm, Express, or body-parser) is missing or installed incorrectly; OR
 - The “node_modules” folder was not added to “.gitignore”
 
-![](https://cdn.careerfoundry.com/assets/rubrics/approved-7dfdcf59318cf52fcbd1333d8b71bf7a2bde35b6e0b753ac975349982495e0b4.svg)
+![](images/icons/approved-7dfdcf59318cf52fcbd1333d8b71bf7a2bde35b6e0b753ac975349982495e0b4_1750129065250.svg)
 
 
 - GitHub repo has been submitted and contains a “package.json” file and a “package-lock.json” file
@@ -715,7 +715,7 @@ Check out recently submitted work by other students to get an idea of what’s r
 
 EVALUATION COMPLETE
 
-![](https://coach-courses-us.s3.amazonaws.com/users/photos/thumb/51945.jpg?1660008090)
+![](images/avatars/51945_1750129065279.jpg)
 
 Vivek Maskara
 
@@ -763,7 +763,7 @@ Vivek
 
 Approved
 
-![Lauren, Sarah, Korina, CareerFoundry Student Advisor](https://images.careerfoundry.com/public/team/student_advisors_july_2020.jpg)
+![Lauren, Sarah, Korina, CareerFoundry Student Advisor](images/misc/student_advisors_july_2020_1750129065374.jpg)
 
 Student Advisors
 
@@ -775,7 +775,7 @@ How motivated do you feel after receiving the feedback from your tutor/mentor?
 
 Did your mentor or tutor respond within the expected timeframe? (24hrs for tutors; 48 hrs for mentors)
 
-![](https://coach-courses-us.s3.amazonaws.com/users/photos/thumb/67730.jpg?1721412873)
+![](images/avatars/67730_1750129065427.jpg)
 
 Oliver Oliverio  Submitted Something for Task 2.3
 

@@ -96,7 +96,7 @@ You also created an “index.js” file, which, by default, fills the “main”
 
 Your folder structure should look like this:
 
-![Folder structure displaying index.js and package.json files in Open Editors](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E4/figure1.png)
+![Folder structure displaying index.js and package.json files in Open Editors](images/misc/figure1_1750129065787.png)
 
 
 ###### Figure 1
@@ -236,7 +236,7 @@ The three requests in the example all use the `GET` method (`app.get`). This is 
 
 Inside the parentheses of the request are “PATH” and “HANDLER.” “PATH” refers to a path on the server—in other words, the endpoint URL the request is targeting. The three endpoints in the example requests above are “/”, “/documentation”, and “/books”. “HANDLER,” on the other hand, is the function to be executed when the route is matched. You’ll learn more about this in a moment.
 
-![Image showing a broken-down version of an app request, with the app, method, path, and handler labeled](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E4/Breakdown%20of%20an%20app%20request.jpg)
+![Image showing a broken-down version of an app request, with the app, method, path, and handler labeled](images/misc/Breakdown_20of_20an_20app_20request_1750129066018.jpg)
 
 
 ###### Figure 2
@@ -335,7 +335,7 @@ Every middleware function has access to (and is able to modify) the request obje
 
 Each of the three requests in the example above included a middleware function (the `app.get()` function actually calls its own middleware function inside of it). Take a look at the diagram below for a better look:
 
-![Diagram showing an app.get function with a function(req, res, next) function inside of it and all the various parts labeled](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E4/figure3.png)
+![Diagram showing an app.get function with a function(req, res, next) function inside of it and all the various parts labeled](images/misc/figure3_1750129066197.png)
 
 
 ###### Figure 4. Middleware diagram from the Express documentation
@@ -415,14 +415,14 @@ The routes themselves contain logic to send back their own, appropriate response
 
 In this way, middleware functions can be “chained,” where each one takes the request and response object, then either returns a response or calls the next middleware function in the stack.
 
-![Diagram requested showing the journey of a request through four different middlewares (Middleware A through Middleware C) and ending with a response.](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E4/Journey%20of%20a%20request%20through%20middleware.jpg)
+![Diagram requested showing the journey of a request through four different middlewares (Middleware A through Middleware C) and ending with a response.](images/misc/Journey_20of_20a_20request_20through_20middleware_1750129066426.jpg)
 
 
 ###### Figure 5
 
 In practice, there are some common middleware functions—logging, user authentication, JSON parsing, static file serving, and app routing—that are routinely called in a certain order, as shown below:
 
-![Diagram showing the common hierarchy of middleware functions in an HTTP request: in order from logging, to user authentication, JSON parsing, static file serving, and app routing.](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E4/Hierarchy%20of%20middleware%20functions%20in%20an%20HTTP%20request.jpg)
+![Diagram showing the common hierarchy of middleware functions in an HTTP request: in order from logging, to user authentication, JSON parsing, static file serving, and app routing.](images/misc/Hierarchy_20of_20middleware_20functions_20in_20an_20HTTP_20request_1750129066579.jpg)
 
 
 ###### Figure 6
@@ -666,7 +666,7 @@ Before you begin, make sure you have the correct folder structure and filenames 
 1. “node_modules” folder (this is where all the individual folders for your modules are stored)
 1. “public” folder containing a “documentation.html” file (this is where you will document your API)
 
-![Folder structure displaying index.js and package.json files in Open Editors](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E4/figure6.png)
+![Folder structure displaying index.js and package.json files in Open Editors](images/misc/figure6_1750129066812.png)
 
 
 ###### Figure 7
@@ -696,19 +696,19 @@ Rubric
 
 Refer to the categories below to see how to meet the requirements of the approved stage
 
-![](https://cdn.careerfoundry.com/assets/rubrics/not_yet-c9fb80e521507759d546f847f8a65a00c66f2c8ec7ece4e37f98c25aa122778c.svg)
+![](images/icons/not_yet-c9fb80e521507759d546f847f8a65a00c66f2c8ec7ece4e37f98c25aa122778c_1750129067110.svg)
 
 
 - Submission doesn’t include a link to the GitHub repo or includes a GitHub repo not related to the project; OR
 - GitHub repo has been submitted, but “index.js” is missing more than one of the required components (e.g., no GET routes have been created, “documentation.html” file is still being served via `http`, `url`, and `fs` modules, and no middleware functions have been created)
 
-![](https://cdn.careerfoundry.com/assets/rubrics/almost_there-f4bb1c077a0a826e7d4e3ecb72859fc401d362d9bd49c0658f4fd85c4a047a87.svg)
+![](images/icons/almost_there-f4bb1c077a0a826e7d4e3ecb72859fc401d362d9bd49c0658f4fd85c4a047a87_1750129067132.svg)
 
 
 - GitHub repo has been submitted, but “index.js” is missing one of the required components (e.g., not all GET routes have been created, “documentation.html” file is still being served via `http`, `url`, and `fs` modules, Morgan hasn’t been used to replace the `fs` module, no error-handling function); OR
 - All required components are included in “index.js” but one or more errors exist in the code
 
-![](https://cdn.careerfoundry.com/assets/rubrics/approved-7dfdcf59318cf52fcbd1333d8b71bf7a2bde35b6e0b753ac975349982495e0b4.svg)
+![](images/icons/approved-7dfdcf59318cf52fcbd1333d8b71bf7a2bde35b6e0b753ac975349982495e0b4_1750129067155.svg)
 
 
 - GitHub repo has been submitted complete with well-written, error-free “index.js” file that:
@@ -726,7 +726,7 @@ Check out recently submitted work by other students to get an idea of what’s r
 
 EVALUATION COMPLETE
 
-![](https://coach-courses-us.s3.amazonaws.com/users/photos/thumb/51945.jpg?1660008090)
+![](images/avatars/51945_1750129067175.jpg)
 
 Vivek Maskara
 
@@ -776,7 +776,7 @@ Vivek
 
 Approved
 
-![Lauren, Sarah, Korina, CareerFoundry Student Advisor](https://images.careerfoundry.com/public/team/student_advisors_july_2020.jpg)
+![Lauren, Sarah, Korina, CareerFoundry Student Advisor](images/misc/student_advisors_july_2020_1750129067273.jpg)
 
 Student Advisors
 
@@ -788,7 +788,7 @@ How motivated do you feel after receiving the feedback from your tutor/mentor?
 
 Did your mentor or tutor respond within the expected timeframe? (24hrs for tutors; 48 hrs for mentors)
 
-![](https://coach-courses-us.s3.amazonaws.com/users/photos/thumb/67730.jpg?1721412873)
+![](images/avatars/67730_1750129067296.jpg)
 
 Oliver Oliverio  Submitted Something for Task 2.4
 

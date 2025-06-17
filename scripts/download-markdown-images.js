@@ -6,6 +6,7 @@
  */
 
 const fs = require('fs').promises;
+const fsSync = require('fs');
 const path = require('path');
 const https = require('https');
 const http = require('http');
@@ -152,7 +153,7 @@ function downloadImage(url, filePath) {
     
     const request = protocol.get(url, response => {
       if (response.statusCode === 200) {
-        const file = fs.createWriteStream(filePath);
+        const file = fsSync.createWriteStream(filePath);
         response.pipe(file);
         
         file.on('finish', () => {

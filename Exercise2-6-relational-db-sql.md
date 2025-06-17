@@ -60,7 +60,7 @@ Technically, a database could be something as simple as a text file. In practice
 
 How exactly does this layer of your web application fit with the rest? Let’s look back at the diagram from the first Exercise of this Achievement:
 
-![Template showing the four layers of a web app, in order from client, to server, to business layer, to data layer. Under the client layer are: mobile browser, web browser, and application. Under the server layer are: web server. Under the business layer are: application and file system. Under the data layer are: database and external system.](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E1/web_app_four_layers_template.jpg)
+![Template showing the four layers of a web app, in order from client, to server, to business layer, to data layer. Under the client layer are: mobile browser, web browser, and application. Under the server layer are: web server. Under the business layer are: application and file system. Under the data layer are: database and external system.](images/misc/web_app_four_layers_template_1750129071021.jpg)
 
 
 ###### Figure 1
@@ -82,7 +82,7 @@ You’ll notice there's a layer between the web server and the data layer called
 
 Whenever you encounter a database as a developer, you’ll inevitably come across the term “schema.” A database schema is a plan or blueprint for how a database should be created. It defines the relationships between different sets of data and acknowledges any constraints on that data. The following image shows you a simple database schema with three tables: Albums, Genre, and Artists.
 
-![A simple database schema with three tables](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E6/figure2.png)
+![A simple database schema with three tables](images/misc/figure2_1750129071191.png)
 
 
 ###### Figure 2. Source: database.guide
@@ -123,7 +123,7 @@ A one-to-one relationship is one in which one item (whether entity or attribute)
 
 Think about your college database. Each college usually has one dean, so therefore the relationship between your college and the dean of your college is one to one.
 
-![One-to-one relationship between a college and a dean](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E6/figure6.png)
+![One-to-one relationship between a college and a dean](images/misc/figure6_1750129071351.png)
 
 
 ###### Figure 6
@@ -135,7 +135,7 @@ Now, let’s return to your project. Each movie in your database has only one de
 
 A one-to-many relationship is one in which one item has many of a second item, but the second item only has one of the first. Let’s go back to the example of your college database. Your college has a few professors, but the professors each belong to a single college. So the relationship between your college is one-to-many.
 
-![One-to-many relationship between a college and its professors](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E6/figure7.png)
+![One-to-many relationship between a college and its professors](images/misc/figure7_1750129071541.png)
 
 
 ###### Figure 7
@@ -147,7 +147,7 @@ This relationship wouldn’t work for movies and their descriptions as it simply
 
 A many-to-many relationship is one in which one item has many of a second item, and the second item also has many of the first. In your college database, the relationship between students and subjects is many-to-many. This is because one student can be enrolled in many subjects, and one subject can be taken by many students.
 
-![Many-to-many relationship between students and subjects](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E6/figure8.png)
+![Many-to-many relationship between students and subjects](images/misc/figure8_1750129071717.png)
 
 
 ###### Figure 8
@@ -234,7 +234,7 @@ Every record in the junction table represents a single user and a single favorit
 
 Here, you can see how all of these tables are mapped together in a schema diagram, which makes it easier to visualize the relationships:
 
-![Diagram showing the connections between IDs in the “Movies,” “Genres,” “Directors”, Users,” and “Users-Movies” tables](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E6/Graphic%20of%20ID%20connections%20between%20tables.jpg)
+![Diagram showing the connections between IDs in the “Movies,” “Genres,” “Directors”, Users,” and “Users-Movies” tables](images/misc/Graphic_20of_20ID_20connections_20between_20tables_1750129071884.jpg)
 
 
 ###### Figure 14
@@ -275,7 +275,7 @@ As mentioned in the previous section, PostgreSQL is an open source SQL database 
 
 To get started with PostgreSQL, first download the correct version for your device (Mac or Windows) from the [PostgreSQL download page](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads). Once the download is complete, you’ll need to run through the Installation Wizard:
 
-![Installation wizard PostgreSQL](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E6/postgres.JPG)
+![Installation wizard PostgreSQL](images/misc/postgres_1750129072047.JPG)
 
 
 ###### Figure 15
@@ -284,28 +284,28 @@ Specify the folder on your computer where you want to install PostgreSQL. Feel f
 
 Next, enter a password for the database superuser (you, the administrator) whose default username will be postgres:
 
-![Screenshot of the PostgreSQL installer asking for a password for the database superuser (postgres)](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E6/PostgreSQL%20installer%20asking%20for%20password.png)
+![Screenshot of the PostgreSQL installer asking for a password for the database superuser (postgres)](images/misc/PostgreSQL_20installer_20asking_20for_20password_1750129072203.png)
 
 
 ###### Figure 16
 
 Next, you’ll need to enter the port for PostgreSQL. Go ahead and keep this at the default of 5432:
 
-![Screenshot of the PostgreSQL installer asking for the port number the server should listen on](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E6/PostgreSQL%20installer%20asking%20for%20port%20number.png)
+![Screenshot of the PostgreSQL installer asking for the port number the server should listen on](images/misc/PostgreSQL_20installer_20asking_20for_20port_20number_1750129072358.png)
 
 
 ###### Figure 17
 
 On the next screen, choose the default locale used by the database:
 
-![Screenshot of the PostgreSQL installer asking for the locale to be used by the new database cluster and “Default locale” is selected](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E6/Default%20locale%20selected%20in%20PosgreSQL%20installer.png)
+![Screenshot of the PostgreSQL installer asking for the locale to be used by the new database cluster and “Default locale” is selected](images/misc/Default_20locale_20selected_20in_20PosgreSQL_20installer_1750129072556.png)
 
 
 ###### Figure 18
 
 Once you click the Next button, the installation should begin. It may take a few minutes (and you may have to click through a few more confirmation screens first):
 
-![Screenshot of the PostgreSQL installer actually installing PostgreSQL](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E6/Installing%20PostgreSQL.png)
+![Screenshot of the PostgreSQL installer actually installing PostgreSQL](images/misc/Installing_20PostgreSQL_1750129072715.png)
 
 
 ###### Figure 19
@@ -329,14 +329,14 @@ Now that you’ve installed PostgreSQL, you’re ready to create some databases.
 
 Once pgAdmin is open, if this is your first time opening pgAdmin, it may ask you to enter a new master password. Note that this is a different password from the one you entered while installing postgreSQL. Go ahead and enter a new master password, after which you’ll be taken to your dashboard. On the left-hand side, you should see a directory structure menu. Open up Servers → PostgreSQL. When you click on PostgreSQL (it might be a different name, but what matters here is the entry you find nested inside Servers), it will ask you to input the super user password you set during the installation process. Once you enter it, the databases will be unlocked. Now → Databases should be visible under PostgreSQL. Go ahead and click on it. You should see your default database, postgres, listed.
 
-![Screenshot of the dashboard in PostgreSQL with the “postgres” database selected. A menu has been called from the database and “Create” is highlighted. An additional menu has been called from the “Create” option.](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E6/pgadmin_1.JPG)
+![Screenshot of the dashboard in PostgreSQL with the “postgres” database selected. A menu has been called from the database and “Create” is highlighted. An additional menu has been called from the “Create” option.](images/misc/pgadmin_1_1750129072912.JPG)
 
 
 ###### Figure 20
 
 You’re now going to create a new database. Right-click on Databases, hover over Create, and then click on Database… Give the database a name and a brief description, for example, “myFlixDB” with the description “This database stores information about movies and users of the myFlix app.” (Feel free to customize these!) Finally, click Save.
 
-![Screenshot of creating a new database and description within PostgreSQL](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E6/pgadmin_2.JPG)
+![Screenshot of creating a new database and description within PostgreSQL](images/misc/pgadmin_2_1750129073160.JPG)
 
 
 ###### Figure 21
@@ -399,7 +399,7 @@ One column constraint is `PRIMARY KEY`. Stating this in a particular row in SQL 
 
 Let’s go ahead and run the two SQL commands above to create the tables. Write the code into your pgAdmin4 query tool (the top-half of the interface). You can then run the command by clicking on the Play symbol marked in the following image (right next the square/stop icon). Alternatively, you can press F5 on the keyboard. This tells the code to “Execute.”
 
-![pgAdmin4 query tool with the code to create the “Genres” and “Directors” tables written into the top-half and the message “Query returned successfully” in the bottom-half](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E6/pgadmin_3.jpg)
+![pgAdmin4 query tool with the code to create the “Genres” and “Directors” tables written into the top-half and the message “Query returned successfully” in the bottom-half](images/misc/pgadmin_3_1750129073438.jpg)
 
 
 ###### Figure 24
@@ -693,7 +693,7 @@ SELECT * FROM Movies
 
 Try running that command in your PostgreSQL query tool. You should see the results at the bottom of the screen. As you’ve only inserted one movie into your database thus far (“Silence of the Lambs”), this will be the only movie displayed; if you had created more records, all of them would be displayed after entering this command.
 
-![Screenshot showing the query tool in PostgreSQL with the SELECT command being used to query the titles and descriptions from all movies in the database. Only the title and description of Silence of the Lambs appear in the bottom-half of the screen.](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E6/pgadmin_4.jpg)
+![Screenshot showing the query tool in PostgreSQL with the SELECT command being used to query the titles and descriptions from all movies in the database. Only the title and description of Silence of the Lambs appear in the bottom-half of the screen.](images/misc/pgadmin_4_1750129073674.jpg)
 
 
 ###### Figure 25
@@ -1082,7 +1082,7 @@ As shown in this demo, you can stick to the following tips when using a generati
 
 If there are any additional requirements, integrate this into the prompt! For example, let’s say you’re creating a “students” table, and in this table you include information about “teacher_name”. You might want to specify something like “at least five students should have the same teacher_name” or “there are only two teachers for all of the students”.
 
-![prompt describing mock data requirements](https://coach-courses-us.s3.amazonaws.com/public/courses/fullstack-immersion/A2/E6/RelationshipsSQL.png)
+![prompt describing mock data requirements](images/misc/RelationshipsSQL_1750129074131.png)
 
 
 ###### Figure 26. Here's an example prompt requiring the mock data for a "users" table and a "books" table to include 3 users and 10 books.
@@ -1199,7 +1199,7 @@ Rubric
 
 Refer to the categories below to see how to meet the requirements of the approved stage
 
-![](https://cdn.careerfoundry.com/assets/rubrics/not_yet-c9fb80e521507759d546f847f8a65a00c66f2c8ec7ece4e37f98c25aa122778c.svg)
+![](images/icons/not_yet-c9fb80e521507759d546f847f8a65a00c66f2c8ec7ece4e37f98c25aa122778c_1750129074462.svg)
 
 
 - Submission doesn’t include an SQL file, SQL file doesn’t contain data relevant to the project, or no zip file of screenshots has been included; OR
@@ -1207,14 +1207,14 @@ Refer to the categories below to see how to meet the requirements of the approve
 - SQL file is missing data (e.g., not enough movies, directors, genres, etc.); OR
 - Zip file doesn’t contain the required screenshots for all 4 queries
 
-![](https://cdn.careerfoundry.com/assets/rubrics/almost_there-f4bb1c077a0a826e7d4e3ecb72859fc401d362d9bd49c0658f4fd85c4a047a87.svg)
+![](images/icons/almost_there-f4bb1c077a0a826e7d4e3ecb72859fc401d362d9bd49c0658f4fd85c4a047a87_1750129074487.svg)
 
 
 - Submission includes an SQL file and a zip folder of screenshots; AND
 - SQL file contains an SQL database of at least 9 movies since one of the movies is expected to be deleted (2 of which have the same director, 2 of which have the same genre), 3 directors, 3 genres, 3 users, and 3 user-movie pairs; BUT
 - Zip file doesn’t contain the required screenshots for all 4 queries
 
-![](https://cdn.careerfoundry.com/assets/rubrics/approved-7dfdcf59318cf52fcbd1333d8b71bf7a2bde35b6e0b753ac975349982495e0b4.svg)
+![](images/icons/approved-7dfdcf59318cf52fcbd1333d8b71bf7a2bde35b6e0b753ac975349982495e0b4_1750129074510.svg)
 
 
 - Submission includes an SQL file and a zip folder of screenshots; AND

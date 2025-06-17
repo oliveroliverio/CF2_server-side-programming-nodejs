@@ -34,7 +34,7 @@ Excited? Then, let’s get started!
 
 In the Achievement thus far, you’ve covered how to work with Node.js, how to create URL endpoints for your HTTP requests, how to build and query a relational database, and how to build and query a non-relational database. Through it all, you’ve followed the diagram below to discover how the four different layers make up a complete web application. You should be fairly familiar with it by now:
 
-![Template showing the four layers of a web app, in order from client, to server, to business layer, to data layer. Under the client layer are: mobile browser, web browser, and application. Under the server layer is: web server. Under the business layer are: application and file system. Under the data layer are: database and external system.](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E1/web_app_four_layers_template.jpg)
+![Template showing the four layers of a web app, in order from client, to server, to business layer, to data layer. Under the client layer are: mobile browser, web browser, and application. Under the server layer is: web server. Under the business layer are: application and file system. Under the data layer are: database and external system.](images/misc/web_app_four_layers_template_1750129077365.jpg)
 
 
 ###### Figure 1
@@ -314,7 +314,7 @@ This code, however, was code you ran through your MongoDB shell. It wasn’t cod
 
 With Mongoose, you can query your database from within your application. It does so by way of the models you just created. In other words, Mongoose doesn’t query your actual database—it queries the models. These commands are then automatically translated into MongoDB logic behind the scenes, which is what does the actual database querying. Think back to the translator analogy from earlier. Say you’re talking to your friend who lives in China, but you can’t speak Mandarin, so you use a translation app. You “query” the translation app with your request: “Hello!” The translation app translates this request into Mandarin automatically, then sends the translated request to your friend: “你好!” Your friend is able to read this translated request and respond appropriately, just like your database is able to read the translated request from Mongoose and respond appropriately.
 
-![Diagram displaying how Mongoose translates code between a Node.js application, Mongoose models and MongoDB](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E8/Mongoose%20translating%20code.jpg)
+![Diagram displaying how Mongoose translates code between a Node.js application, Mongoose models and MongoDB](images/misc/Mongoose_20translating_20code_1750129077417.jpg)
 
 
 ###### Figure 2
@@ -537,14 +537,14 @@ At the end of the `POST` command comes the error-handling function—an importan
 
 The `.catch` function will “catch” any problems that Mongoose encounters while running the `create` command. This could include, for instance, if any of the required parameters for creating a new “User” object (according to the schema defined in “models.js”) weren’t found in the `req.body`. You can test this in Postman by sending a `POST` request to your “/users” endpoint with a JSON object in the body that has a `Username` and `Password` key but not an `Email` key (which is required as per the defined model). If everything has been implemented correctly, this should lead to an error.
 
-[](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E8/Postman%20returning%20an%20error%20after%20POST%20request.png)
+[](images/misc/Postman_20returning_20an_20error_20after_20POST_20request_1750129077922.png)
 
 
 ###### Figure 3 (Click Image to Zoom)
 
 On the other hand, if you test the request in Postman and include all the required parameters (`Username`, `Password`, and `Email`), you should receive a response with the “User” document you just inserted, including its `_id`.
 
-[](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E8/Postman%20returning%20User%20document%20created%20via%20the%20POST%20request.png)
+[](images/misc/Postman_20returning_20User_20document_20created_20via_20the_20POST_20request_1750129078182.png)
 
 
 ###### Figure 4 (Click Image to Zoom)
@@ -618,7 +618,7 @@ Finally, you handle any errors that may have occurred using the `catch()` functi
 
 To test this, make a request to the “/users” endpoint in Postman. But this time, add the username of the user you inserted in the previous “CREATE” section at the end of the URL. You should see that same data returned as a response:
 
-[](https://images.careerfoundry.com/public/courses/fullstack-immersion/A2/E8/Testing%20the%20GET%20command%20in%20Postman.png)
+[](images/misc/Testing_20the_20GET_20command_20in_20Postman_1750129078402.png)
 
 
 ###### Figure 5 (Click Image to Zoom)
@@ -993,21 +993,21 @@ Rubric
 
 Refer to the categories below to see how to meet the requirements of the approved stage
 
-![](https://cdn.careerfoundry.com/assets/rubrics/not_yet-c9fb80e521507759d546f847f8a65a00c66f2c8ec7ece4e37f98c25aa122778c.svg)
+![](images/icons/not_yet-c9fb80e521507759d546f847f8a65a00c66f2c8ec7ece4e37f98c25aa122778c_1750129077638.svg)
 
 
 - Submission doesn’t include a link to the GitHub repo or a zipped folder of screenshots, or it includes a GitHub repo not related to the project; OR
 - GitHub repo has been submitted and includes an updated “documentation.html” file, but not all endpoints have been documented and may also be missing some required information; AND
 - A zipped folder of screenshots has been included, but not every endpoint has been tested
 
-![](https://cdn.careerfoundry.com/assets/rubrics/almost_there-f4bb1c077a0a826e7d4e3ecb72859fc401d362d9bd49c0658f4fd85c4a047a87.svg)
+![](images/icons/almost_there-f4bb1c077a0a826e7d4e3ecb72859fc401d362d9bd49c0658f4fd85c4a047a87_1750129077664.svg)
 
 
 - GitHub repo has been submitted and includes a “documentation.html” file; AND
 - All endpoints have been updated, but some of the required information is missing or could be expanded upon; AND
 - A zipped folder of screenshots showing the response of each endpoint being tested in Postman has also been submitted
 
-![](https://cdn.careerfoundry.com/assets/rubrics/approved-7dfdcf59318cf52fcbd1333d8b71bf7a2bde35b6e0b753ac975349982495e0b4.svg)
+![](images/icons/approved-7dfdcf59318cf52fcbd1333d8b71bf7a2bde35b6e0b753ac975349982495e0b4_1750129077685.svg)
 
 
 - GitHub repo has been submitted and includes an updated “documentation.html” file with Mongoose logic added for every endpoint, expected methods for every request body, and the type of data that will be returned for every request (including examples); AND
@@ -1021,7 +1021,7 @@ Check out recently submitted work by other students to get an idea of what’s r
 
 EVALUATION COMPLETE
 
-![](https://coach-courses-us.s3.amazonaws.com/users/photos/thumb/51945.jpg?1660008090)
+![](images/avatars/51945_1750129077708.jpg)
 
 Vivek Maskara
 
@@ -1067,7 +1067,7 @@ Vivek
 
 Approved
 
-![Lauren, Sarah, Korina, CareerFoundry Student Advisor](https://images.careerfoundry.com/public/team/student_advisors_july_2020.jpg)
+![Lauren, Sarah, Korina, CareerFoundry Student Advisor](images/misc/student_advisors_july_2020_1750129077807.jpg)
 
 Student Advisors
 
@@ -1079,7 +1079,7 @@ How motivated do you feel after receiving the feedback from your tutor/mentor?
 
 Did your mentor or tutor respond within the expected timeframe? (24hrs for tutors; 48 hrs for mentors)
 
-![](https://coach-courses-us.s3.amazonaws.com/users/photos/thumb/67730.jpg?1721412873)
+![](images/avatars/67730_1750129077828.jpg)
 
 Oliver Oliverio  Submitted Something for Task 2.8
 

@@ -238,3 +238,17 @@ The automated documentation system streamlines the process of maintaining accura
 
 #### Why:
 External image URLs in markdown documentation can break over time, causing documentation to lose important visual elements. This local image storage system ensures that all images persist even if external URLs break, making the documentation more resilient and self-contained. The categorized directory structure also improves organization and makes it easier to manage images.
+
+## 2025-06-16: Fix image downloader script
+
+### Commit: fix: Use fsSync for createWriteStream in image downloader script
+
+#### Files Changed:
+- [scripts/download-markdown-images.js](cci:7://file:///Users/olivero54/Downloads/z-dev/CF2_server-side-programming-nodejs/scripts/download-markdown-images.js:0:0-0:0): Fixed error with fs.createWriteStream
+
+#### Changes:
+1. Added separate import for synchronous fs module: `const fsSync = require('fs');`
+2. Updated the downloadImage function to use fsSync.createWriteStream instead of fs.createWriteStream
+
+#### Why:
+The script was using fs.promises for most operations but trying to use fs.createWriteStream directly, which doesn't exist in the promises API. This fix ensures the script can properly download images and update markdown references.

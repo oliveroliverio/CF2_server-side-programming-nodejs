@@ -36,7 +36,7 @@ npm install
 
 2. Create a PostgreSQL database:
 ```bash
-createdb movieAPI
+createdb movieapi
 ```
 
 3. Configure environment variables in `.env` file:
