@@ -1,5 +1,7 @@
 const User = require('../models/User');
 const Movie = require('../models/Movie');
+const passport = require('passport');
+const { generateJWTToken } = require('../auth');
 
 // Get all users
 exports.getAllUsers = async (req, res) => {
@@ -16,11 +18,11 @@ exports.getAllUsers = async (req, res) => {
 exports.getUserByUsername = async (req, res) => {
   try {
     const user = await User.findOne({ username: req.params.username }).select('-password');
-    
+
     if (!user) {
       return res.status(404).json({ error: 'User not found' });
     }
-    
+
     res.json(user);
   } catch (err) {
     console.error(err);
@@ -34,11 +36,11 @@ exports.getFavoriteMovies = async (req, res) => {
     const user = await User.findOne({ username: req.params.username })
       .populate('favoriteMovies')
       .select('-password');
-    
+
     if (!user) {
       return res.status(404).json({ error: 'User not found' });
     }
-    
+
     res.json(user.favoriteMovies);
   } catch (err) {
     console.error(err);
@@ -76,7 +78,7 @@ exports.createUser = async (req, res) => {
     });
 
     const newUser = await user.save();
-    
+
     // Return user without password
     res.status(201).json({
       _id: newUser._id,
@@ -108,7 +110,7 @@ exports.updateUser = async (req, res) => {
     if (!updatedUser) {
       return res.status(404).json({ error: 'User not found' });
     }
-    
+
     res.json(updatedUser);
   } catch (err) {
     console.error(err);
@@ -121,11 +123,11 @@ exports.deleteUser = async (req, res) => {
   try {
     const deletedUser = await User.findOneAndRemove({ username: req.params.username })
       .select('-password');
-    
+
     if (!deletedUser) {
       return res.status(404).json({ error: 'User not found' });
     }
-    
+
     res.json(deletedUser);
   } catch (err) {
     console.error(err);
@@ -161,7 +163,7 @@ exports.addFavoriteMovie = async (req, res) => {
     const updatedUser = await User.findOne({ username: req.params.username })
       .populate('favoriteMovies')
       .select('-password');
-    
+
     res.json(updatedUser.favoriteMovies);
   } catch (err) {
     console.error(err);
@@ -191,10 +193,29 @@ exports.removeFavoriteMovie = async (req, res) => {
     const updatedUser = await User.findOne({ username: req.params.username })
       .populate('favoriteMovies')
       .select('-password');
-    
+
     res.json(updatedUser.favoriteMovies);
   } catch (err) {
     console.error(err);
     res.status(500).json({ error: 'Internal server error' });
   }
+};
+
+// Login user
+exports.login = (req, res) => {
+  passport.authenticate('local', { session: false }, (error, user, info) => {
+    if (error || !user) {
+      return res.status(400).json({
+        message: 'Something is not right',
+        user: user
+      });
+    }
+    req.login(user, { session: false }, (error) => {
+      if (error) {
+        res.send(error);
+      }
+      const token = generateJWTToken(user.toJSON());
+      return res.json({ user, token });
+    });
+  })(req, res);
 };
