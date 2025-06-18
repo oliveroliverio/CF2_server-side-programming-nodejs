@@ -12,28 +12,35 @@ require('dotenv').config();
 passport.use(
     new LocalStrategy(
         {
-            usernameField: 'Username',
-            passwordField: 'Password',
+            usernameField: 'username',
+            passwordField: 'password',
         },
         async (username, password, callback) => {
-            console.log(`${username} ${password}`);
-            await User.findOne({ Username: username })
-                .then((user) => {
-                    if (!user) {
-                        console.log('incorrect username');
-                        return callback(null, false, {
-                            message: 'Incorrect username or password.',
-                        });
-                    }
-                    console.log('finished');
-                    return callback(null, user);
-                })
-                .catch((error) => {
-                    if (error) {
-                        console.log(error);
-                        return callback(error);
-                    }
-                });
+            console.log(`Attempting login for username: ${username}`);
+            try {
+                const user = await User.findOne({ username: username });
+
+                if (!user) {
+                    console.log('User not found');
+                    return callback(null, false, {
+                        message: 'Incorrect username or password.',
+                    });
+                }
+
+                const isValid = await user.validatePassword(password);
+                if (!isValid) {
+                    console.log('Invalid password');
+                    return callback(null, false, {
+                        message: 'Incorrect username or password.',
+                    });
+                }
+
+                console.log('Login successful');
+                return callback(null, user);
+            } catch (error) {
+                console.error('Login error:', error);
+                return callback(error);
+            }
         }
     )
 );
