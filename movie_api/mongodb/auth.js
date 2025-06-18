@@ -15,7 +15,7 @@ const jwtSecret = process.env.JWT_SECRET || 'your_jwt_secret'; // Use environmen
  */
 const generateJWTToken = (user) => {
     return jwt.sign(user, jwtSecret, {
-        subject: user.Username,
+        subject: user.username,
         expiresIn: '7d',
         algorithm: 'HS256'
     });

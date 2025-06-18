@@ -203,19 +203,40 @@ exports.removeFavoriteMovie = async (req, res) => {
 
 // Login user
 exports.login = (req, res) => {
+  console.log('Login attempt with:', req.body);
   passport.authenticate('local', { session: false }, (error, user, info) => {
-    if (error || !user) {
-      return res.status(400).json({
-        message: 'Something is not right',
-        user: user
+    if (error) {
+      console.error('Login error:', error);
+      return res.status(500).json({
+        message: 'Error during authentication',
+        error: error.message
       });
     }
+    
+    if (!user) {
+      console.log('Authentication failed:', info?.message);
+      return res.status(401).json({
+        message: info?.message || 'Authentication failed'
+      });
+    }
+
     req.login(user, { session: false }, (error) => {
       if (error) {
-        res.send(error);
+        console.error('Login session error:', error);
+        return res.status(500).json({
+          message: 'Error logging in',
+          error: error.message
+        });
       }
       const token = generateJWTToken(user.toJSON());
-      return res.json({ user, token });
+      return res.json({ 
+        user: {
+          username: user.username,
+          email: user.email,
+          _id: user._id
+        }, 
+        token 
+      });
     });
   })(req, res);
 };
