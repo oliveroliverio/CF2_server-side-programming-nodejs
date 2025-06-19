@@ -1,0 +1,190 @@
+{
+  "movies": [
+    {
+      "id": "1",
+      "title": "Edge of Tomorrow",
+      "description": "A soldier relives the same day repeatedly in a war against aliens.",
+      "genre": {
+        "name": "Science Fiction",
+        "description": "Fictional stories based on futuristic science and technology."
+      },
+      "director": {
+        "name": "Doug Liman",
+        "bio": "Doug Liman is an American film director and producer.",
+        "birthYear": 1965,
+        "deathYear": null
+      },
+      "imageURL": "https://example.com/images/edge_of_tomorrow.jpg",
+      "featured": true
+    },
+    {
+      "id": "2",
+      "title": "Moonlight",
+      "description": "A young African-American man grapples with his identity and sexuality.",
+      "genre": {
+        "name": "Drama",
+        "description": "A genre that relies on the emotional and relational development of realistic characters."
+      },
+      "director": {
+        "name": "Barry Jenkins",
+        "bio": "Barry Jenkins is an American filmmaker and writer.",
+        "birthYear": 1979,
+        "deathYear": null
+      },
+      "imageURL": "https://example.com/images/moonlight.jpg",
+      "featured": false
+    },
+    {
+      "id": "3",
+      "title": "Knives Out",
+      "description": "A detective investigates the death of a wealthy patriarch.",
+      "genre": {
+        "name": "Mystery",
+        "description": "A genre focused on solving a crime or unraveling secrets."
+      },
+      "director": {
+        "name": "Rian Johnson",
+        "bio": "Rian Johnson is an American director known for genre-blending films.",
+        "birthYear": 1973,
+        "deathYear": null
+      },
+      "imageURL": "https://example.com/images/knives_out.jpg",
+      "featured": true
+    },
+    {
+      "id": "4",
+      "title": "Spirited Away",
+      "description": "A girl enters a magical world and must find a way to rescue her parents.",
+      "genre": {
+        "name": "Animation",
+        "description": "Animated works often aimed at children, but enjoyed by all ages."
+      },
+      "director": {
+        "name": "Hayao Miyazaki",
+        "bio": "Hayao Miyazaki is a legendary Japanese animator and director.",
+        "birthYear": 1941,
+        "deathYear": null
+      },
+      "imageURL": "https://example.com/images/spirited_away.jpg",
+      "featured": true
+    },
+    {
+      "id": "5",
+      "title": "Get Out",
+      "description": "A Black man uncovers disturbing secrets when visiting his white girlfriend's family.",
+      "genre": {
+        "name": "Horror",
+        "description": "Designed to scare, shock, or disgust the audience."
+      },
+      "director": {
+        "name": "Jordan Peele",
+        "bio": "Jordan Peele is an American filmmaker and comedian.",
+        "birthYear": 1979,
+        "deathYear": null
+      },
+      "imageURL": "https://example.com/images/get_out.jpg",
+      "featured": true
+    },
+    {
+      "id": "6",
+      "title": "La La Land",
+      "description": "A jazz musician and an aspiring actress fall in love in Los Angeles.",
+      "genre": {
+        "name": "Musical",
+        "description": "Movies with a strong emphasis on music and dance performances."
+      },
+      "director": {
+        "name": "Damien Chazelle",
+        "bio": "Damien Chazelle is an American director known for musical and dramatic films.",
+        "birthYear": 1985,
+        "deathYear": null
+      },
+      "imageURL": "https://example.com/images/la_la_land.jpg",
+      "featured": false
+    },
+    {
+      "id": "7",
+      "title": "The Grand Budapest Hotel",
+      "description": "A concierge teams up with a lobby boy to prove his innocence after being framed.",
+      "genre": {
+        "name": "Comedy",
+        "description": "Designed to amuse and entertain with humor."
+      },
+      "director": {
+        "name": "Wes Anderson",
+        "bio": "Wes Anderson is known for his distinct visual and narrative style.",
+        "birthYear": 1969,
+        "deathYear": null
+      },
+      "imageURL": "https://example.com/images/grand_budapest.jpg",
+      "featured": false
+    },
+    {
+      "id": "8",
+      "title": "The Dark Knight",
+      "description": "Batman battles the Joker in Gotham City.",
+      "genre": {
+        "name": "Action",
+        "description": "High-energy sequences, stunts, and battles define this genre."
+      },
+      "director": {
+        "name": "Christopher Nolan",
+        "bio": "Christopher Nolan is a British-American filmmaker known for complex narratives.",
+        "birthYear": 1970,
+        "deathYear": null
+      },
+      "imageURL": "https://example.com/images/dark_knight.jpg",
+      "featured": true
+    },
+    {
+      "id": "9",
+      "title": "Amélie",
+      "description": "A whimsical young woman decides to change the lives of those around her for the better.",
+      "genre": {
+        "name": "Romance",
+        "description": "Focuses on passion, emotion, and romantic involvement of characters."
+      },
+      "director": {
+        "name": "Jean-Pierre Jeunet",
+        "bio": "Jean-Pierre Jeunet is a French film director and screenwriter.",
+        "birthYear": 1953,
+        "deathYear": null
+      },
+      "imageURL": "https://example.com/images/amelie.jpg",
+      "featured": false
+    },
+    {
+      "id": "10",
+      "title": "Parasite",
+      "description": "Greed and class discrimination threaten the symbiotic relationship between two families.",
+      "genre": {
+        "name": "Thriller",
+        "description": "Keeps the audience on edge with tension, suspense, and excitement."
+      },
+      "director": {
+        "name": "Bong Joon-ho",
+        "bio": "Bong Joon-ho is a South Korean filmmaker known for genre-bending films.",
+        "birthYear": 1969,
+        "deathYear": null
+      },
+      "imageURL": "https://example.com/images/parasite.jpg",
+      "featured": true
+    },
+    {
+      "title": "Dune: Part Two",
+      "description": "Paul Atreides unites with Chani and the Fremen while seeking revenge against the conspirators who destroyed his family.",
+      "genre": {
+        "name": "Science Fiction",
+        "description": "Films that speculate on scientific developments and their potential social effects."
+      },
+      "director": {
+        "name": "Denis Villeneuve",
+        "bio": "Canadian filmmaker known for science fiction films with strong visual styles.",
+        "birthYear": 1967
+      },
+      "imageURL": "https://example.com/images/dune_part_two.jpg",
+      "featured": true,
+      "id": "11"
+    }
+  ]
+}

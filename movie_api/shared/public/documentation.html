@@ -1,0 +1,676 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie API Documentation</title>
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        line-height: 1.6;
+        color: #333;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      h1, h2, h3, h4 {
+        color: #0066cc;
+      }
+      .endpoints {
+        list-style: none;
+        padding: 0;
+      }
+      .endpoint {
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        overflow: hidden;
+      }
+      .method {
+        display: inline-block;
+        padding: 6px 10px;
+        color: white;
+        font-weight: bold;
+        width: 60px;
+        text-align: center;
+      }
+      .get { background-color: #61affe; }
+      .post { background-color: #49cc90; }
+      .put { background-color: #fca130; }
+      .delete { background-color: #f93e3e; }
+      .path {
+        display: inline-block;
+        padding: 6px 10px;
+        font-family: monospace;
+        font-weight: bold;
+      }
+      .description {
+        padding: 10px;
+        background-color: #f8f8f8;
+        border-top: 1px solid #ddd;
+      }
+      .details {
+        padding: 10px;
+        border-top: 1px solid #ddd;
+      }
+      code {
+        background-color: #f1f1f1;
+        padding: 2px 5px;
+        border-radius: 3px;
+        font-family: monospace;
+      }
+      .timestamp {
+        color: #666;
+        font-size: 0.8em;
+        margin-top: 30px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Movie API Documentation</h1>
+    <p>
+      This API provides access to information about movies, directors,
+      and genres. Users can sign up, update their personal information,
+      and create lists of their favorite movies.
+    </p>
+
+    <h2>Endpoints</h2>
+    <h3>/api/v1/movies</h3>
+<ul class="endpoints">
+        <li class="endpoint">
+          <div class="method get">GET</div>
+          <div class="path">/api/v1/movies</div>
+          <div class="description">GET endpoint for /</div>
+
+          <div class="details">
+            
+
+            
+          </div>
+        </li>
+      
+        <li class="endpoint">
+          <div class="method get">GET</div>
+          <div class="path">/api/v1/movies/id/:id</div>
+          <div class="description">Get all movies</div>
+
+          <div class="details">
+            
+              <div class="params">
+                <h4>URL Parameters:</h4>
+                <ul>
+                  <li><code>id</code></li>
+                </ul>
+              </div>
+            
+
+            
+          </div>
+        </li>
+      
+        <li class="endpoint">
+          <div class="method get">GET</div>
+          <div class="path">/api/v1/movies/title/:title</div>
+          <div class="description">Get movie by ID</div>
+
+          <div class="details">
+            
+              <div class="params">
+                <h4>URL Parameters:</h4>
+                <ul>
+                  <li><code>title</code></li>
+                </ul>
+              </div>
+            
+
+            
+          </div>
+        </li>
+      
+        <li class="endpoint">
+          <div class="method get">GET</div>
+          <div class="path">/api/v1/movies/director/:director</div>
+          <div class="description">Get movie by title</div>
+
+          <div class="details">
+            
+              <div class="params">
+                <h4>URL Parameters:</h4>
+                <ul>
+                  <li><code>director</code></li>
+                </ul>
+              </div>
+            
+
+            
+          </div>
+        </li>
+      
+        <li class="endpoint">
+          <div class="method get">GET</div>
+          <div class="path">/api/v1/movies/genre/:genre</div>
+          <div class="description">GET endpoint for /genre/:genre</div>
+
+          <div class="details">
+            
+              <div class="params">
+                <h4>URL Parameters:</h4>
+                <ul>
+                  <li><code>genre</code></li>
+                </ul>
+              </div>
+            
+
+            
+          </div>
+        </li>
+      
+        <li class="endpoint">
+          <div class="method post">POST</div>
+          <div class="path">/api/v1/movies</div>
+          <div class="description">POST endpoint for /</div>
+
+          <div class="details">
+            
+
+            
+          </div>
+        </li>
+      
+        <li class="endpoint">
+          <div class="method put">PUT</div>
+          <div class="path">/api/v1/movies/id/:id</div>
+          <div class="description">PUT endpoint for /id/:id</div>
+
+          <div class="details">
+            
+              <div class="params">
+                <h4>URL Parameters:</h4>
+                <ul>
+                  <li><code>id</code></li>
+                </ul>
+              </div>
+            
+
+            
+          </div>
+        </li>
+      
+        <li class="endpoint">
+          <div class="method delete">DELETE</div>
+          <div class="path">/api/v1/movies/id/:id</div>
+          <div class="description">DELETE endpoint for /id/:id</div>
+
+          <div class="details">
+            
+              <div class="params">
+                <h4>URL Parameters:</h4>
+                <ul>
+                  <li><code>id</code></li>
+                </ul>
+              </div>
+            
+
+            
+          </div>
+        </li>
+      
+        <li class="endpoint">
+          <div class="method get">GET</div>
+          <div class="path">/api/v1/movies</div>
+          <div class="description">GET endpoint for /</div>
+
+          <div class="details">
+            
+
+            
+          </div>
+        </li>
+      
+        <li class="endpoint">
+          <div class="method get">GET</div>
+          <div class="path">/api/v1/movies/id/:id</div>
+          <div class="description">Get all movies</div>
+
+          <div class="details">
+            
+              <div class="params">
+                <h4>URL Parameters:</h4>
+                <ul>
+                  <li><code>id</code></li>
+                </ul>
+              </div>
+            
+
+            
+          </div>
+        </li>
+      
+        <li class="endpoint">
+          <div class="method get">GET</div>
+          <div class="path">/api/v1/movies/title/:title</div>
+          <div class="description">GET endpoint for /title/:title</div>
+
+          <div class="details">
+            
+              <div class="params">
+                <h4>URL Parameters:</h4>
+                <ul>
+                  <li><code>title</code></li>
+                </ul>
+              </div>
+            
+
+            
+          </div>
+        </li>
+      
+        <li class="endpoint">
+          <div class="method get">GET</div>
+          <div class="path">/api/v1/movies/director/:director</div>
+          <div class="description">GET endpoint for /director/:director</div>
+
+          <div class="details">
+            
+              <div class="params">
+                <h4>URL Parameters:</h4>
+                <ul>
+                  <li><code>director</code></li>
+                </ul>
+              </div>
+            
+
+            
+          </div>
+        </li>
+      
+        <li class="endpoint">
+          <div class="method get">GET</div>
+          <div class="path">/api/v1/movies/genre/:genre</div>
+          <div class="description">GET endpoint for /genre/:genre</div>
+
+          <div class="details">
+            
+              <div class="params">
+                <h4>URL Parameters:</h4>
+                <ul>
+                  <li><code>genre</code></li>
+                </ul>
+              </div>
+            
+
+            
+          </div>
+        </li>
+      
+        <li class="endpoint">
+          <div class="method post">POST</div>
+          <div class="path">/api/v1/movies</div>
+          <div class="description">POST endpoint for /</div>
+
+          <div class="details">
+            
+
+            
+              <div class="params">
+                <h4>Request Body:</h4>
+                <ul>
+                  <li><code>title</code></li><li><code>description</code></li><li><code>genreName</code></li><li><code>genreDescription</code></li><li><code>directorName</code></li><li><code>directorBio</code></li><li><code>directorBirthYear</code></li><li><code>directorDeathYear</code></li><li><code>imageURL</code></li><li><code>featured</code></li>
+                </ul>
+              </div>
+            
+          </div>
+        </li>
+      
+        <li class="endpoint">
+          <div class="method put">PUT</div>
+          <div class="path">/api/v1/movies/id/:id</div>
+          <div class="description">PUT endpoint for /id/:id</div>
+
+          <div class="details">
+            
+              <div class="params">
+                <h4>URL Parameters:</h4>
+                <ul>
+                  <li><code>id</code></li>
+                </ul>
+              </div>
+            
+
+            
+              <div class="params">
+                <h4>Request Body:</h4>
+                <ul>
+                  <li><code>title</code></li><li><code>description</code></li><li><code>genreName</code></li><li><code>genreDescription</code></li><li><code>directorName</code></li><li><code>directorBio</code></li><li><code>directorBirthYear</code></li><li><code>directorDeathYear</code></li><li><code>imageURL</code></li><li><code>featured</code></li>
+                </ul>
+              </div>
+            
+          </div>
+        </li>
+      
+        <li class="endpoint">
+          <div class="method delete">DELETE</div>
+          <div class="path">/api/v1/movies/id/:id</div>
+          <div class="description">DELETE endpoint for /id/:id</div>
+
+          <div class="details">
+            
+              <div class="params">
+                <h4>URL Parameters:</h4>
+                <ul>
+                  <li><code>id</code></li>
+                </ul>
+              </div>
+            
+
+            
+          </div>
+        </li>
+      </ul><h3>/api/v1/users</h3>
+<ul class="endpoints">
+        <li class="endpoint">
+          <div class="method get">GET</div>
+          <div class="path">/api/v1/users</div>
+          <div class="description">GET endpoint for /</div>
+
+          <div class="details">
+            
+
+            
+          </div>
+        </li>
+      
+        <li class="endpoint">
+          <div class="method get">GET</div>
+          <div class="path">/api/v1/users/:username</div>
+          <div class="description">Get all users</div>
+
+          <div class="details">
+            
+              <div class="params">
+                <h4>URL Parameters:</h4>
+                <ul>
+                  <li><code>username</code></li>
+                </ul>
+              </div>
+            
+
+            
+          </div>
+        </li>
+      
+        <li class="endpoint">
+          <div class="method get">GET</div>
+          <div class="path">/api/v1/users/:username/favorites</div>
+          <div class="description">Get user by username</div>
+
+          <div class="details">
+            
+              <div class="params">
+                <h4>URL Parameters:</h4>
+                <ul>
+                  <li><code>username</code></li>
+                </ul>
+              </div>
+            
+
+            
+          </div>
+        </li>
+      
+        <li class="endpoint">
+          <div class="method post">POST</div>
+          <div class="path">/api/v1/users</div>
+          <div class="description">Get user's favorite movies</div>
+
+          <div class="details">
+            
+
+            
+          </div>
+        </li>
+      
+        <li class="endpoint">
+          <div class="method put">PUT</div>
+          <div class="path">/api/v1/users/:username</div>
+          <div class="description">PUT endpoint for /:username</div>
+
+          <div class="details">
+            
+              <div class="params">
+                <h4>URL Parameters:</h4>
+                <ul>
+                  <li><code>username</code></li>
+                </ul>
+              </div>
+            
+
+            
+          </div>
+        </li>
+      
+        <li class="endpoint">
+          <div class="method delete">DELETE</div>
+          <div class="path">/api/v1/users/:username</div>
+          <div class="description">DELETE endpoint for /:username</div>
+
+          <div class="details">
+            
+              <div class="params">
+                <h4>URL Parameters:</h4>
+                <ul>
+                  <li><code>username</code></li>
+                </ul>
+              </div>
+            
+
+            
+          </div>
+        </li>
+      
+        <li class="endpoint">
+          <div class="method post">POST</div>
+          <div class="path">/api/v1/users/:username/favorites/:movieId</div>
+          <div class="description">Delete a user</div>
+
+          <div class="details">
+            
+              <div class="params">
+                <h4>URL Parameters:</h4>
+                <ul>
+                  <li><code>username</code></li><li><code>movieId</code></li>
+                </ul>
+              </div>
+            
+
+            
+          </div>
+        </li>
+      
+        <li class="endpoint">
+          <div class="method delete">DELETE</div>
+          <div class="path">/api/v1/users/:username/favorites/:movieId</div>
+          <div class="description">DELETE endpoint for /:username/favorites/:movieId</div>
+
+          <div class="details">
+            
+              <div class="params">
+                <h4>URL Parameters:</h4>
+                <ul>
+                  <li><code>username</code></li><li><code>movieId</code></li>
+                </ul>
+              </div>
+            
+
+            
+          </div>
+        </li>
+      
+        <li class="endpoint">
+          <div class="method get">GET</div>
+          <div class="path">/api/v1/users</div>
+          <div class="description">GET endpoint for /</div>
+
+          <div class="details">
+            
+
+            
+          </div>
+        </li>
+      
+        <li class="endpoint">
+          <div class="method get">GET</div>
+          <div class="path">/api/v1/users/:username</div>
+          <div class="description">Get all users</div>
+
+          <div class="details">
+            
+              <div class="params">
+                <h4>URL Parameters:</h4>
+                <ul>
+                  <li><code>username</code></li>
+                </ul>
+              </div>
+            
+
+            
+          </div>
+        </li>
+      
+        <li class="endpoint">
+          <div class="method get">GET</div>
+          <div class="path">/api/v1/users/:username/favorites</div>
+          <div class="description">Get user by username</div>
+
+          <div class="details">
+            
+              <div class="params">
+                <h4>URL Parameters:</h4>
+                <ul>
+                  <li><code>username</code></li>
+                </ul>
+              </div>
+            
+
+            
+              <div class="params">
+                <h4>Request Body:</h4>
+                <ul>
+                  <li><code>username</code></li><li><code>password</code></li><li><code>email</code></li><li><code>birthDate</code></li>
+                </ul>
+              </div>
+            
+          </div>
+        </li>
+      
+        <li class="endpoint">
+          <div class="method post">POST</div>
+          <div class="path">/api/v1/users</div>
+          <div class="description">POST endpoint for /</div>
+
+          <div class="details">
+            
+
+            
+              <div class="params">
+                <h4>Request Body:</h4>
+                <ul>
+                  <li><code>username</code></li><li><code>password</code></li><li><code>email</code></li><li><code>birthDate</code></li>
+                </ul>
+              </div>
+            
+          </div>
+        </li>
+      
+        <li class="endpoint">
+          <div class="method put">PUT</div>
+          <div class="path">/api/v1/users/:username</div>
+          <div class="description">PUT endpoint for /:username</div>
+
+          <div class="details">
+            
+              <div class="params">
+                <h4>URL Parameters:</h4>
+                <ul>
+                  <li><code>username</code></li>
+                </ul>
+              </div>
+            
+
+            
+              <div class="params">
+                <h4>Request Body:</h4>
+                <ul>
+                  <li><code>username</code></li><li><code>password</code></li><li><code>email</code></li><li><code>birthDate</code></li>
+                </ul>
+              </div>
+            
+          </div>
+        </li>
+      
+        <li class="endpoint">
+          <div class="method delete">DELETE</div>
+          <div class="path">/api/v1/users/:username</div>
+          <div class="description">DELETE endpoint for /:username</div>
+
+          <div class="details">
+            
+              <div class="params">
+                <h4>URL Parameters:</h4>
+                <ul>
+                  <li><code>username</code></li>
+                </ul>
+              </div>
+            
+
+            
+          </div>
+        </li>
+      
+        <li class="endpoint">
+          <div class="method post">POST</div>
+          <div class="path">/api/v1/users/:username/favorites/:movieId</div>
+          <div class="description">POST endpoint for /:username/favorites/:movieId</div>
+
+          <div class="details">
+            
+              <div class="params">
+                <h4>URL Parameters:</h4>
+                <ul>
+                  <li><code>username</code></li><li><code>movieId</code></li>
+                </ul>
+              </div>
+            
+
+            
+          </div>
+        </li>
+      
+        <li class="endpoint">
+          <div class="method delete">DELETE</div>
+          <div class="path">/api/v1/users/:username/favorites/:movieId</div>
+          <div class="description">DELETE endpoint for /:username/favorites/:movieId</div>
+
+          <div class="details">
+            
+              <div class="params">
+                <h4>URL Parameters:</h4>
+                <ul>
+                  <li><code>username</code></li><li><code>movieId</code></li>
+                </ul>
+              </div>
+            
+
+            
+          </div>
+        </li>
+      </ul>
+
+    <div class="timestamp">
+      Documentation automatically generated on 6/16/2025, 7:32:20 PM
+    </div>
+  </body>
+</html>

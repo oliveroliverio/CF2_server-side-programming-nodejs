@@ -1,0 +1,63 @@
+{
+  "name": "movie_api",
+  "version": "1.0.0",
+  "description": "A REST API for movies with MongoDB",
+  "main": "movie_api/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node movie_api/server.js",
+    "dev": "nodemon movie_api/server.js",
+    "start:mongodb": "node movie_api/mongodb/server.js",
+    "dev:mongodb": "nodemon movie_api/mongodb/server.js",
+    "start:postgresql": "node movie_api/postgresql/server.js",
+    "dev:postgresql": "nodemon movie_api/postgresql/server.js",
+    "seed:mongodb": "node movie_api/mongodb/utils/seedDatabase.js",
+    "seed:postgresql": "node movie_api/postgresql/utils/seedDatabase.js",
+    "update:directors": "node movie_api/postgresql/utils/updateDirectors.js",
+    "docs:generate": "node movie_api/shared/utils/generateDocs.js",
+    "docs:watch": "node movie_api/shared/utils/watchAndGenerateDocs.js",
+    "download-images": "node scripts/download-markdown-images.js"
+  },
+  "keywords": [
+    "movies",
+    "api",
+    "express",
+    "mongodb",
+    "mongoose"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^2.2.0",
+    "chokidar": "^3.5.3",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.5.0",
+    "morgan": "^1.10.0",
+    "passport": "^0.7.0",
+    "passport-jwt": "^4.0.1",
+    "passport-local": "^1.0.0",
+    "pg": "^8.11.3",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.35.2",
+    "sequelize-cli": "^6.6.2",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "jest": "^29.6.4",
+    "nodemon": "^3.0.1",
+    "supertest": "^6.3.3"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testMatch": [
+      "**/tests/**/*.js"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "movie_api"
+    ]
+  }
+}
