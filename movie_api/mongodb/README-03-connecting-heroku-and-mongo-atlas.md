@@ -5,4 +5,17 @@ Be sure to update the config vars on heroku to use the connection string from at
 KEY: CONNECTION_URI
 VALUE: <your-connection-string>
 
-After that: `git push heroku main`
+After that: `git push heroku main`, be sure make sure Atlas has all IP addresses whitelisted (0.0.0.0/0) in the Network Access settings (left tab).
+
+test requests with heroku url (see .env)
+
+```bash
+curl -X POST https://myflix2-54ee4b2daeee.herokuapp.com/users \
+-H "Content-Type: application/json" \
+-d '{
+  "username": "bethany_steinman",
+  "password": "testPassword123",
+  "email": "bethany.steinman@example.com",
+  "birthDate": "1990-01-01"
+}'
+```

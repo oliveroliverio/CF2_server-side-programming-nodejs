@@ -15,7 +15,9 @@ require('dotenv').config();
 // Connect to MongoDB
 mongoose.connect(process.env.CONNECTION_URI || 'mongodb://localhost:27017/movieAPI', {
   useNewUrlParser: true,
-  useUnifiedTopology: true
+  useUnifiedTopology: true,
+  retryWrites: true,
+  w: 'majority'
 })
   .then(() => {
     console.log('Connected to MongoDB');
