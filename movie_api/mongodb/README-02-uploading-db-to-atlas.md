@@ -15,3 +15,4 @@ mongosh "mongodb+srv://myflix-cluster.zxbvej4.mongodb.net/" --apiVersion 1 --use
 Enter password:
 
 now you can run mongosh commands like you did locally
+
