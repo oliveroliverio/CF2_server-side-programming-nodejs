@@ -256,3 +256,62 @@ The script was using fs.promises for most operations but trying to use fs.create
 ## 2025-06-19: uploaded to heroku
 url: https://quiet-anchorage-12984-ad5a49403d9c.herokuapp.com/
 
+## 2025-06-20: Fix MongoDB Atlas Connection Issues
+
+### Commit: Update MongoDB connection options for Atlas compatibility
+
+#### Files Changed:
+- `movie_api/mongodb/index.js`: Updated MongoDB connection options
+
+#### Changes:
+1. Added required MongoDB Atlas connection options:
+   - `retryWrites: true`
+   - `w: 'majority'`
+2. These options are required for proper write operations on MongoDB Atlas
+
+#### Why:
+The connection to MongoDB Atlas was timing out during write operations because the connection options weren't properly configured for Atlas's requirements. Adding these options ensures proper write operations and prevents timeout errors during user creation and other database operations.
+
+#### Testing:
+Successfully tested by:
+1. Creating a new user via POST to /users
+2. Logging in via POST to /users/login
+3. Retrieving users list via GET /users with JWT authentication
+
+## 2025-06-20: Fix MongoDB Atlas Database Configuration
+
+### Issue:
+User data was being created in the wrong database (test) instead of the intended database (movieAPI)
+
+### Resolution:
+1. Updated Heroku's CONNECTION_URI to explicitly specify the database name and include all required connection options:
+```bash
+heroku config:set CONNECTION_URI="mongodb+srv://<username>:<password>@myflix-cluster.zxbvej4.mongodb.net/movieAPI?retryWrites=true&w=majority&appName=myflix-cluster"
+```
+
+2. Restarted the Heroku app to apply the new configuration:
+```bash
+heroku restart
+```
+
+3. Tested user creation with the corrected database configuration:
+```bash
+curl -X POST https://myflix2-54ee4b2daeee.herokuapp.com/users \
+-H "Content-Type: application/json" \
+-d '{
+  "username": "bethany",
+  "password": "test123",
+  "email": "bethany@test.com"
+}'
+```
+
+### Key Changes:
+1. Added `/movieAPI` to the connection URI to specify the correct database
+2. Maintained all necessary connection options:
+   - `retryWrites=true`
+   - `w=majority`
+   - `appName=myflix-cluster`
+
+### Outcome:
+User creation now successfully writes to the correct 'movieAPI' database in MongoDB Atlas.
+
