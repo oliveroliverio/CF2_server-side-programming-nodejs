@@ -315,3 +315,9 @@ curl -X POST https://myflix2-54ee4b2daeee.herokuapp.com/users \
 ### Outcome:
 User creation now successfully writes to the correct 'movieAPI' database in MongoDB Atlas.
 
+
+# 250624
+---begin advisor fix suggestion:
+1. Add CORS middleware in mongodb/index.js.
+2. Seed your MongoDB Atlas database using your existing seed:mongodb script or MongoDB Compass.
+3. Submit Postman screenshots showing: -Registration and login results -Invalid inputs triggering validation errors -Confirmation that passwords are hashed in the database
