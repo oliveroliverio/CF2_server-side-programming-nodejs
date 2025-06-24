@@ -13,7 +13,11 @@ mongoose.connect(process.env.CONNECTION_URI || 'mongodb://localhost:27017/movieA
   useUnifiedTopology: true
 })
   .then(() => {
+    const connection = mongoose.connection;
     console.log('Connected to MongoDB for seeding');
+    console.log('Database name:', connection.name);
+    console.log('Database host:', connection.host);
+    console.log('Database port:', connection.port);
     seedDatabase();
   })
   .catch(err => {
