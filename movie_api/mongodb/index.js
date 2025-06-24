@@ -3,6 +3,7 @@ const morgan = require('morgan');
 const mongoose = require('mongoose');
 const path = require('path');
 const app = express();
+const cors = require('cors');
 
 
 // Import route modules
@@ -27,6 +28,7 @@ mongoose.connect(process.env.CONNECTION_URI || 'mongodb://localhost:27017/movieA
   });
 
 // Middleware
+app.use(cors())
 app.use(morgan('common'));
 app.use(express.json());
 app.use(express.static('public'));
