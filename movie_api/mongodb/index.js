@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 const path = require('path');
 const app = express();
 const cors = require('cors');
+const helmet = require('helmet');
 
 
 // Import route modules
@@ -12,6 +13,9 @@ const userRoutes = require('./routes/userRoutes');
 
 // Load environment variables
 require('dotenv').config();
+
+// Security middleware
+app.use(helmet());
 
 // Connect to MongoDB
 mongoose.connect(process.env.CONNECTION_URI || 'mongodb://localhost:27017/movieAPI', {
