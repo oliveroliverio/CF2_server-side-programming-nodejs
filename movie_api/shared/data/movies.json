@@ -185,6 +185,23 @@
       "imageURL": "https://example.com/images/dune_part_two.jpg",
       "featured": true,
       "id": "11"
+    },
+    {
+      "id": "10",
+      "title": "VeggieTales: Jonah",
+      "description": "A animated film following the Biblical story of Jonah with vegetable characters, teaching valuable moral lessons through humor and music.",
+      "genre": {
+        "name": "Animation",
+        "description": "Films created using various animation techniques."
+      },
+      "director": {
+        "name": "Phil Vischer & Mike Nawrocki",
+        "bio": "Co-creators of VeggieTales and founders of Big Idea Entertainment",
+        "birthYear": "1967",
+        "deathYear": ""
+      },
+      "imageUrl": "https://example.com/veggietales-jonah.jpg",
+      "featured": true
     }
   ]
 }

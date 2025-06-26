@@ -256,6 +256,57 @@ The script was using fs.promises for most operations but trying to use fs.create
 ## 2025-06-19: uploaded to heroku
 url: https://quiet-anchorage-12984-ad5a49403d9c.herokuapp.com/
 
+## 2025-06-25: Fixed MongoDB Atlas Connection Issues with Heroku
+
+### Issue:
+Heroku app was failing to connect to MongoDB Atlas with a 500 Internal Server Error. The error logs showed:
+```
+Failed to connect to MongoDB: MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster
+```
+
+### Root Cause:
+1. Heroku's IP address wasn't whitelisted in MongoDB Atlas
+2. The CONNECTION_URI environment variable in Heroku wasn't properly set
+
+### Solution Steps:
+
+1. **Find Heroku App's IP**:
+```bash
+heroku run curl http://ifconfig.me
+```
+
+2. **MongoDB Atlas Configuration**:
+   - Option 1 (Development): Add `0.0.0.0/0` to allow all IPs
+   - Option 2 (Production): Add specific Heroku IP to whitelist
+
+3. **Verify/Set Heroku Environment Variables**:
+```bash
+# Check current config
+heroku config
+
+# Get specific CONNECTION_URI value
+heroku config:get CONNECTION_URI
+
+# Set correct CONNECTION_URI
+heroku config:set CONNECTION_URI="mongodb+srv://[username]:[password]@[cluster].mongodb.net/?retryWrites=true&w=majority"
+```
+
+4. **Restart Heroku**:
+```bash
+heroku restart
+```
+
+5. **Monitor Logs**:
+```bash
+heroku logs --tail
+```
+
+### Key Learnings:
+1. When deploying to Heroku, the app's IP (not your local machine's IP) needs MongoDB Atlas whitelist access
+2. For development, using `0.0.0.0/0` in MongoDB Atlas is acceptable but not recommended for production
+3. Always verify environment variables are correctly set in Heroku's config
+4. Use `heroku logs --tail` to monitor connection issues in real-time
+
 ## 2025-06-20: Fix MongoDB Atlas Connection Issues
 
 ### Commit: Update MongoDB connection options for Atlas compatibility
