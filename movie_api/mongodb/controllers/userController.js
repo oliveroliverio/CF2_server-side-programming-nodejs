@@ -2,6 +2,7 @@ const User = require('../models/User');
 const Movie = require('../models/Movie');
 const passport = require('passport');
 const { generateJWTToken } = require('../auth');
+const { body, validationResult } = require('express-validator');
 
 // Get all users
 exports.getAllUsers = async (req, res) => {
@@ -47,6 +48,30 @@ exports.getFavoriteMovies = async (req, res) => {
     res.status(500).json({ error: 'Internal server error' });
   }
 };
+
+// Validation middleware
+exports.validateUser = [
+  body('username')
+    .isLength({ min: 3 })
+    .withMessage('Username must be at least 3 characters'),
+  body('password')
+    .isLength({ min: 8 })
+    .withMessage('Password must be at least 8 characters')
+    .matches(/\d/)
+    .withMessage('Password must contain a number')
+    .matches(/[!@#$%^&*]/)
+    .withMessage('Password must contain a special character'),
+  body('email')
+    .isEmail()
+    .withMessage('Must be a valid email address'),
+  (req, res, next) => {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      return res.status(400).json({ errors: errors.array() });
+    }
+    next();
+  }
+];
 
 // Create a new user
 exports.createUser = async (req, res) => {
@@ -212,7 +237,7 @@ exports.login = (req, res) => {
         error: error.message
       });
     }
-    
+
     if (!user) {
       console.log('Authentication failed:', info?.message);
       return res.status(401).json({
@@ -229,13 +254,13 @@ exports.login = (req, res) => {
         });
       }
       const token = generateJWTToken(user.toJSON());
-      return res.json({ 
+      return res.json({
         user: {
           username: user.username,
           email: user.email,
           _id: user._id
-        }, 
-        token 
+        },
+        token
       });
     });
   })(req, res);

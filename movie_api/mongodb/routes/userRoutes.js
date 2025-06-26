@@ -4,7 +4,7 @@ const passport = require('passport');
 const userController = require('../controllers/userController');
 
 // Public routes (no authentication required)
-router.post('/', userController.createUser); // Registration endpoint
+router.post('/', userController.validateUser, userController.createUser); // Registration endpoint
 router.post('/login', userController.login);  // Login endpoint
 
 // Protected routes (authentication required)
