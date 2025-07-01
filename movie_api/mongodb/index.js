@@ -6,7 +6,6 @@ const app = express();
 const cors = require('cors');
 const helmet = require('helmet');
 
-
 // Import route modules
 const movieRoutes = require('./routes/movieRoutes');
 const userRoutes = require('./routes/userRoutes');
@@ -37,7 +36,7 @@ app.use(morgan('common'));
 app.use(express.json());
 app.use(express.static('public'));
 
-// GET requests
+// Routes
 app.get('/', (req, res) => {
   res.send('Welcome to my movie API!');
 });
