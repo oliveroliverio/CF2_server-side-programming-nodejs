@@ -23,7 +23,7 @@ passport.use(
                 if (!user) {
                     console.log('User not found');
                     return callback(null, false, {
-                        message: 'Incorrect username or password.',
+                        message: 'User not found.',
                     });
                 }
 
@@ -31,7 +31,7 @@ passport.use(
                 if (!isValid) {
                     console.log('Invalid password');
                     return callback(null, false, {
-                        message: 'Incorrect username or password.',
+                        message: 'Invalid password.',
                     });
                 }
 
