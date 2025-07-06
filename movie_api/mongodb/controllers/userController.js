@@ -122,9 +122,9 @@ exports.createUser = async (req, res) => {
 exports.updateUser = async (req, res) => {
   try {
     // Don't allow username changes
-    if (req.body.username && req.body.username !== req.params.username) {
-      return res.status(400).json({ error: 'Username cannot be changed' });
-    }
+    // if (req.body.username && req.body.username !== req.params.username) {
+    //   return res.status(400).json({ error: 'Username cannot be changed' });
+    // }
 
     const updatedUser = await User.findOneAndUpdate(
       { username: req.params.username },
